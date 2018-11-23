@@ -1,0 +1,9 @@
+###########################################
+# JeriCraft Shop GUI config file.
+# Copyright 2018 Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
+###########################################################################
+
+PluginPrefix: "&7[&cJeriCraft&7]"
+NoPermission: "&cAccess Denied."
+ReloadPlugin: "&aPlugin Reloaded"
+GamemodeNotice: '&cYou must be in survival mode!'

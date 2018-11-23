@@ -1,0 +1,28 @@
+name: JCShopGUI
+version: ${project.version}
+main: me.jericraft.entry_point
+authors: [Chalwk]
+description: The JeriCraft Shop GUI system
+website: www.jericraft.enjin.com
+api-version: 1.13
+commands:
+  shop:
+    description: Opens the shop GUI main menu
+    usage: /<command>
+permissions:
+  jericraft.shop.*:
+    description: Access to all JCShopGUI commands.
+    default: op
+    children:
+      jericraft.shop.use: true
+      jericraft.shop.gamemode.bypass: true
+      jericraft.shop.reload: true
+  jericraft.shop.use:
+    description: Allows you to open Shop GUI
+    default: op
+  jericraft.shop.gamemode.bypass:
+    description: Allows you to use Shop GUI in creative mode.
+    default: op
+  jericraft.shop.reload:
+    description: Reload the JCShopGUI plugin
+    default: op
