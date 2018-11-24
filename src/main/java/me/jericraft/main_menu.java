@@ -15,7 +15,7 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.meta.ItemMeta;
 
-public class shop_gui implements Listener {
+public class main_menu implements Listener {
 
     public static Inventory menu = org.bukkit.Bukkit.createInventory(null, 9, ChatColor.RED + "The Shop Menu");
 
@@ -32,14 +32,14 @@ public class shop_gui implements Listener {
     }
 
     public static Inventory buildingBlocks_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
-    public static Inventory decorationBlocks_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
-    public static Inventory redstone_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
-    public static Inventory transport_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
-    public static Inventory miscellaneous_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
-    public static Inventory food_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
-    public static Inventory tools_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
-    public static Inventory combat_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
-    public static Inventory brewing_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
+    public static Inventory decorationBlocks_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Decoration Blocks (page 1)");
+    public static Inventory redstone_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Redstone (page 1)");
+    public static Inventory transport_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Transport (page 1)");
+    public static Inventory miscellaneous_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Misccellaneous (page 1)");
+    public static Inventory food_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Food (page 1)");
+    public static Inventory tools_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Tools (page 1)");
+    public static Inventory combat_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Combat (page 1)");
+    public static Inventory brewing_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Brewing E(page 1)");
 
     public static ItemStack createGuiItem(String name, ArrayList<String> desc, Material mat) {
         ItemStack i = new ItemStack(mat, 1);
@@ -58,7 +58,10 @@ public class shop_gui implements Listener {
     @EventHandler
     public void onInventoryClick(InventoryClickEvent event) {
         String invName = event.getInventory().getName();
-        if (!invName.equals(menu.getName()) && (!invName.equals(buildingBlocks_1.getName()))) {
+        if (!invName.equals(menu.getName()) && (!invName.equals(buildingBlocks_1.getName()))
+                && (!invName.equals(decorationBlocks_1.getName())) && (!invName.equals(redstone_1.getName())) && (!invName.equals(transport_1.getName()))
+                && (!invName.equals(miscellaneous_1.getName())) && (!invName.equals(food_1.getName())) && (!invName.equals(tools_1.getName()))
+                && (!invName.equals(combat_1.getName())) && (!invName.equals(brewing_1.getName()))) {
             return;
         }
         if (event.getClick().equals(ClickType.NUMBER_KEY)) {
@@ -71,42 +74,32 @@ public class shop_gui implements Listener {
 
         if (clickedItem == null || clickedItem.getType().equals(Material.AIR)) return;
 
-        if (event.getRawSlot() == 10) player.sendMessage("You clicked at slot " + 1);
         if (clickedItem.getType().equals(Material.BRICKS)) {
             player.closeInventory();
-            category_BuildingBlocks.addItems_BuildingBlocks_1();
             player.openInventory(buildingBlocks_1);
         } else if (clickedItem.getType().equals(Material.PEONY)) {
             player.closeInventory();
-            category_DecorationBlocks.addItems_DecoratoinBlocks_1();
             player.openInventory(decorationBlocks_1);
         } else if (clickedItem.getType().equals(Material.REDSTONE)) {
             player.closeInventory();
-            category_Redstone.addItems_Redstone_1();
             player.openInventory(redstone_1);
         } else if (clickedItem.getType().equals(Material.POWERED_RAIL)) {
             player.closeInventory();
-            category_Transport.addItems_Transport_1();
             player.openInventory(transport_1);
         } else if (clickedItem.getType().equals(Material.LAVA_BUCKET)) {
             player.closeInventory();
-            category_Miscellaneous.addItems_Miscellaneous_1();
             player.openInventory(miscellaneous_1);
         } else if (clickedItem.getType().equals(Material.APPLE)) {
             player.closeInventory();
-            category_Food.addItems_Food_1();
             player.openInventory(food_1);
         } else if (clickedItem.getType().equals(Material.IRON_AXE)) {
             player.closeInventory();
-            category_Tools.addItems_Tools_1();
             player.openInventory(tools_1);
         } else if (clickedItem.getType().equals(Material.GOLDEN_SWORD)) {
             player.closeInventory();
-            category_Combat.addItems_Combat_1();
             player.openInventory(combat_1);
         } else if (clickedItem.getType().equals(Material.POTION)) {
             player.closeInventory();
-            category_Brewing.addItems_Brewing_1();
             player.openInventory(brewing_1);
         }
     }

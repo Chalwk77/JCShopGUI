@@ -7,3 +7,12 @@ PluginPrefix: "&7[&cJeriCraft&7]"
 NoPermission: "&cAccess Denied."
 ReloadPlugin: "&aPlugin Reloaded"
 GamemodeNotice: '&cYou must be in survival mode!'
+
+# Buy: right click
+# sell: left click
+
+buyRClick: '&bYou bought &e%item_quantity% %item_name% &bfor &e$%item_price%'
+sellLClick: '&bYou sold &e%item_quantity% %item_name% &bfor &e$%item_price%'
+buyRShiftClick: '&bYou bought &e%item_quantity% %item_name% &bfor &e$%item_price%'
+sellLShiftClick: '&bYou sold &e%item_quantity% %item_name% &bfor &e$%item_price%'
+notEnoughMoney: '&cNot Enough Money. You need a minimum of $%item_price% to buy %item_name%.'

@@ -2,15 +2,11 @@ package me.jericraft;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
-
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static me.jericraft.shop_gui.miscellaneous_1;
-import static me.jericraft.shop_gui.createGuiItem;
+import static me.jericraft.main_menu.miscellaneous_1;
+import static me.jericraft.main_menu.createGuiItem;
 
 public class category_Miscellaneous {
 
