@@ -113,8 +113,6 @@ public class inventoryClickHandler implements Listener {
                 double sell_price = Integer.parseInt(lore.get(1));
                 double item_quantity = Integer.parseInt(lore.get(2));
                 String item_name = mat.toString();
-                //TODO: check if player inventory is full
-
                 // ================= BUYING ================= //
                 if (event.isRightClick() && !event.isShiftClick()) {
                     EconomyResponse take_money = econ.withdrawPlayer(player, buy_price);
