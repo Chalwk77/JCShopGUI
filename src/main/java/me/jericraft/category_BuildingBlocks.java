@@ -3,7 +3,6 @@ package me.jericraft;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.event.Listener;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -16,16 +15,9 @@ import static me.jericraft.main_menu.buildingBlocks_1;
 import static me.jericraft.main_menu.createGuiItem;
 
 public class category_BuildingBlocks implements Listener {
-    private final entry_point plugin;
-    private final FileConfiguration config;
-
-    public category_BuildingBlocks(entry_point plugin) {
-        this.plugin = plugin;
-        config = plugin.getConfig();
-    }
 
     public static void addItems_BuildingBlocks_1() {
-        buildingBlocks_1.addItem(createGuiItem("item_name", new ArrayList<String>(Arrays.asList("5", "2", "1")), Material.STONE));
+        buildingBlocks_1.addItem(createGuiItem("item_name", new ArrayList<String>(Arrays.asList("5", "2", "16")), Material.STONE));
         buildingBlocks_1.addItem(createGuiItem("item_name", new ArrayList<String>(Arrays.asList("lore")), Material.GRANITE));
         buildingBlocks_1.addItem(createGuiItem("item_name", new ArrayList<String>(Arrays.asList("lore")), Material.POLISHED_GRANITE));
         buildingBlocks_1.addItem(createGuiItem("item_name", new ArrayList<String>(Arrays.asList("lore")), Material.DIORITE));
@@ -355,6 +347,6 @@ public class category_BuildingBlocks implements Listener {
         previousPageMeta.setDisplayName("previous_page");
         previousPageMeta.setLore(Arrays.asList("<<-- (5) Previous Page"));
         previousPage.setItemMeta(previousPageMeta);
-        buildingBlocks_6.setItem(19, new ItemStack(previousPage));
+        buildingBlocks_6.setItem(18, new ItemStack(previousPage));
     }
 }

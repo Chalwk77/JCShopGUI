@@ -1,6 +1,9 @@
 package me.jericraft;
+
 import net.milkbowl.vault.economy.EconomyResponse;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -10,7 +13,10 @@ import org.bukkit.event.inventory.ClickType;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
+import org.bukkit.inventory.meta.ItemMeta;
 
+import java.text.DecimalFormat;
+import java.util.HashMap;
 import java.util.List;
 
 import static me.jericraft.entry_point.econ;
@@ -21,8 +27,6 @@ import static me.jericraft.category_BuildingBlocks.buildingBlocks_3;
 import static me.jericraft.category_BuildingBlocks.buildingBlocks_4;
 import static me.jericraft.category_BuildingBlocks.buildingBlocks_5;
 import static me.jericraft.category_BuildingBlocks.buildingBlocks_6;
-
-
 
 public class inventoryClickHandler implements Listener {
 
@@ -44,7 +48,6 @@ public class inventoryClickHandler implements Listener {
         }
 
         if (event.getClick().equals(ClickType.NUMBER_KEY)) {
-
             event.setCancelled(true);
         }
         event.setCancelled(true);
@@ -52,11 +55,10 @@ public class inventoryClickHandler implements Listener {
         Player player = (Player) event.getWhoClicked();
         ItemStack clickedItem = event.getCurrentItem();
 
+        if (clickedItem == null || clickedItem.getType().equals(Material.AIR)) return;
+        event.setCancelled(true);
         Material mat = event.getCurrentItem().getType();
 
-        PlayerInventory customer = player.getInventory();
-
-        if (clickedItem == null || clickedItem.getType().equals(Material.AIR)) return;
         if (clickedItem.hasItemMeta()) {
             if (invName.equals(buildingBlocks_1.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
@@ -107,47 +109,79 @@ public class inventoryClickHandler implements Listener {
 
             if (!clickedItem.getType().equals(Material.WITHER_SKELETON_SKULL)) {
                 List<String> lore = clickedItem.getItemMeta().getLore();
-                int buy_price = Integer.parseInt(lore.get(0));
-                int sell_price = Integer.parseInt(lore.get(1));
-                int item_quantity = Integer.parseInt(lore.get(2));
+                double buy_price = Integer.parseInt(lore.get(0));
+                double sell_price = Integer.parseInt(lore.get(1));
+                double item_quantity = Integer.parseInt(lore.get(2));
                 String item_name = mat.toString();
+                //TODO: check if player inventory is full
+
                 // ================= BUYING ================= //
-                if (event.getClick() == ClickType.RIGHT) {
-                    if (!event.isShiftClick()) {
-                        EconomyResponse r = econ.withdrawPlayer(player, buy_price);
-                        if (r.transactionSuccess()) {
-                            //customer.addItem(new ItemStack(mat.toString()), item_quantity);
-                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("buyRClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + buy_price))));
+                if (event.isRightClick() && !event.isShiftClick()) {
+                    EconomyResponse take_money = econ.withdrawPlayer(player, buy_price);
+                    if (take_money.transactionSuccess()) {
+                        HashMap<Integer, ItemStack> new_item = new HashMap<Integer, ItemStack>();
+                        new_item.putAll((player.getInventory().addItem(new ItemStack(mat, Integer.parseInt(lore.get(2))))));
+                        if (!new_item.isEmpty()) {
+                            Location loc = player.getLocation();
+                            player.getWorld().dropItem(loc, clickedItem);
+                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("inventoryFull")));
                         } else {
-                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughMoney").replace("%item_price%", "" + buy_price).replace("%item_name%", "" + item_name))));
+                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("buyRClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + buy_price))));
                         }
                     } else {
-                        EconomyResponse r = econ.withdrawPlayer(player, buy_price * 64);
-                        if (r.transactionSuccess()) {
-                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("buyRShiftClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + buy_price))));
-                        } else {
-                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughMoney").replace("%item_price%", "" + buy_price).replace("%item_name%", "" + item_name))));
-                        }
+                        player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughMoney").replace("%item_price%", "" + buy_price).replace("%item_name%", "" + item_name))));
+                    }
+                } else if (event.isRightClick() && event.isShiftClick()) {
+                    EconomyResponse take_money_mul = econ.withdrawPlayer(player, (buy_price / item_quantity) * 64);
+                    if (take_money_mul.transactionSuccess()) {
+                        player.getInventory().addItem(new ItemStack(mat, 64));
+                        player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("buyRShiftClick").replace("%item_quantity%", "" + 64).replace("%item_name%", "" + item_name).replace("%item_price%", "" + (buy_price / item_quantity) * 64))));
+                    } else {
+                        player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughMoney").replace("%item_price%", "" + buy_price).replace("%item_name%", "" + item_name).replace("%item_quantity%", "" + 64))));
                     }
                     // ================= SELLING ================= //
-                } else if (event.getClick() == ClickType.LEFT) {
-                    if (!event.isShiftClick()) {
-                        EconomyResponse r = econ.depositPlayer(player, sell_price);
-                        if (r.transactionSuccess()) {
-                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + buy_price))));
-                        } else {
-                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughMoney").replace("%item_price%", "" + buy_price).replace("%item_name%", "" + item_name))));
+                } else {
+                    if (player.getInventory().contains(mat)) {
+                        if (event.isLeftClick() && !event.isShiftClick()) {
+                            EconomyResponse give_money = econ.depositPlayer(player, sell_price);
+                            if (give_money.transactionSuccess()) {
+                                HashMap<Integer, ItemStack> new_item = new HashMap<Integer, ItemStack>();
+                                new_item.putAll((player.getInventory().removeItem(new ItemStack(mat, Integer.parseInt(lore.get(2))))));
+                                player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + sell_price))));
+                            }
+                        } else if (event.isLeftClick() && event.isShiftClick()) {
+                            int count = 0;
+
+
+                            for (ItemStack stack : player.getInventory().getContents()) {
+                                if (stack != null && stack.getType() == mat) {
+                                    count += stack.getAmount();
+                                    if (count < 64) {
+                                        double d = (sell_price / count) * 64;
+                                        DecimalFormat f = new DecimalFormat("##.00");
+                                        player.getInventory().remove(new ItemStack(mat, count));
+                                        EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / count) * 64);
+                                        if (give_money_mul.transactionSuccess()) {
+                                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLShiftClick").replace("%item_quantity%", "" + count).replace("%item_name%", "" + mat.toString()).replace("%item_price%", "" + f.format(d)))));
+                                        }
+                                    } else if (count > 64) {
+                                        HashMap<Integer, ItemStack> new_item_2 = new HashMap<Integer, ItemStack>();
+                                        player.getInventory().removeItem(new ItemStack(mat, 64));
+                                        //new_item_2.putAll((player.getInventory().removeItem(new ItemStack(mat, 64))));
+                                        EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / item_quantity) * 64);
+                                        if (give_money_mul.transactionSuccess()) {
+                                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLShiftClick").replace("%item_quantity%", "" + 64).replace("%item_name%", "" + mat.toString()).replace("%item_price%", "" + (sell_price / item_quantity) * 64))));
+                                        }
+                                    }
+                                }
+                            }
                         }
                     } else {
-                        EconomyResponse r = econ.depositPlayer(player, sell_price * 64);
-                        if (r.transactionSuccess()) {
-                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLShiftClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + mat.toString()).replace("%item_price%", "" + buy_price))));
-                        } else {
-                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughMoney").replace("%item_price%", "" + buy_price).replace("%item_name%", "" + item_name))));
-                        }
+                        player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughItems"))));
                     }
                 }
             }
         }
     }
 }
+

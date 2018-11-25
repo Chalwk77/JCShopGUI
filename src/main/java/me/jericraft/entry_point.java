@@ -16,46 +16,38 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import static me.jericraft.main_menu.initMenuIcons;
+
+import java.util.List;
+import java.util.Set;
+
 import static me.jericraft.main_menu.openMainMenu;
 
 public class entry_point extends JavaPlugin {
+    private ConfigManager cfgm;
+    private main_menu loadMenuIcons;
+    private category_BuildingBlocks loadBuildingBlocks;
+
+
     //public static entry_point plugin;
     public final String PLUGIN_PREFIX = ChatColor.translateAlternateColorCodes('&', getConfig().getString("PluginPrefix") + ChatColor.RESET);
     public static Economy econ = null;
 
     @Override
     public void onEnable() {
+        loadConfigManager();
         Bukkit.getServer().getPluginManager().registerEvents(new main_menu(), this);
-        getServer().getPluginManager().registerEvents(new category_BuildingBlocks(this), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new category_BuildingBlocks(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new inventoryClickHandler(this), this);
+        //Bukkit.getServer().getPluginManager().registerEvents(new page_handler(this), this);
 
-
-        // add items one-time-operation
-        initMenuIcons();
-        category_BuildingBlocks.addItems_BuildingBlocks_1();
-        category_BuildingBlocks.addItems_BuildingBlocks_2();
-        category_BuildingBlocks.addItems_BuildingBlocks_3();
-        category_BuildingBlocks.addItems_BuildingBlocks_4();
-        category_BuildingBlocks.addItems_BuildingBlocks_5();
-        category_BuildingBlocks.addItems_BuildingBlocks_6();
-
-        category_DecorationBlocks.addItems_DecorationBlocks_1();
-        category_Redstone.addItems_Redstone_1();
-        category_Transport.addItems_Transport_1();
-        category_Miscellaneous.addItems_Miscellaneous_1();
-        category_Tools.addItems_Tools_1();
-        category_Combat.addItems_Combat_1();
-        category_Brewing.addItems_Brewing_1();
-        category_Food.addItems_Food_1();
-
-        getConfig().options().copyDefaults(true);
-        saveConfig();
         if (!setupEconomy() ) {
             getLogger().severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
+        loadConfig();
+        preloadMenu();
+        preload_category_BuildingBlocks();
     }
 
     private boolean setupEconomy() {
@@ -105,5 +97,36 @@ public class entry_point extends JavaPlugin {
             return true;
         }
         return false;
+    }
+
+    public void loadConfigManager(){
+        cfgm = new ConfigManager();
+        cfgm.setup();
+        cfgm.saveData();
+        cfgm.reloadData();
+//        Set<String> list = getConfig().getConfigurationSection("items").getKeys(false);
+//        for(String item_name : list) {
+//            System.out.println(item_name);
+//        }
+    }
+
+    public void loadConfig() {
+        getConfig().options().copyDefaults(true);
+        saveConfig();
+    }
+
+    public void preloadMenu() {
+        loadMenuIcons = new main_menu();
+        loadMenuIcons.initMenuIcons();
+    }
+
+    public void preload_category_BuildingBlocks() {
+        loadBuildingBlocks = new category_BuildingBlocks();
+        loadBuildingBlocks.addItems_BuildingBlocks_1();
+        loadBuildingBlocks.addItems_BuildingBlocks_2();
+        loadBuildingBlocks.addItems_BuildingBlocks_3();
+        loadBuildingBlocks.addItems_BuildingBlocks_4();
+        loadBuildingBlocks.addItems_BuildingBlocks_5();
+        loadBuildingBlocks.addItems_BuildingBlocks_6();
     }
 }
