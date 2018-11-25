@@ -151,8 +151,6 @@ public class inventoryClickHandler implements Listener {
                             }
                         } else if (event.isLeftClick() && event.isShiftClick()) {
                             int count = 0;
-
-
                             for (ItemStack stack : player.getInventory().getContents()) {
                                 if (stack != null && stack.getType() == mat) {
                                     count += stack.getAmount();
@@ -164,14 +162,13 @@ public class inventoryClickHandler implements Listener {
                                         if (give_money_mul.transactionSuccess()) {
                                             player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLShiftClick").replace("%item_quantity%", "" + count).replace("%item_name%", "" + mat.toString()).replace("%item_price%", "" + f.format(d)))));
                                         }
-                                    } else if (count > 64) {
-                                        HashMap<Integer, ItemStack> new_item_2 = new HashMap<Integer, ItemStack>();
+                                    } else if (count >= 64) {
                                         player.getInventory().removeItem(new ItemStack(mat, 64));
-                                        //new_item_2.putAll((player.getInventory().removeItem(new ItemStack(mat, 64))));
                                         EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / item_quantity) * 64);
                                         if (give_money_mul.transactionSuccess()) {
                                             player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLShiftClick").replace("%item_quantity%", "" + 64).replace("%item_name%", "" + mat.toString()).replace("%item_price%", "" + (sell_price / item_quantity) * 64))));
                                         }
+                                        break;
                                     }
                                 }
                             }
