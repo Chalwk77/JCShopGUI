@@ -8,15 +8,13 @@ NoPermission: "&cAccess Denied."
 ReloadPlugin: "&aPlugin Reloaded"
 GamemodeNotice: '&cYou must be in survival mode!'
 
-# Buy: right click
-# sell: left click
 buyRClick: '&bYou bought &e%item_quantity% %item_name% &bfor &e$%item_price%'
 sellLClick: '&bYou sold &e%item_quantity% %item_name% &bfor &e$%item_price%'
 buyRShiftClick: '&bYou bought &e%item_quantity% %item_name% &bfor &e$%item_price%'
 sellLShiftClick: '&bYou sold &e%item_quantity% %item_name% &bfor &e$%item_price%'
-notEnoughMoney: '&cNot Enough Money! You need $%item_price% for X%item_quantity% %item_name%.'
+notEnoughMoney: '&cNot Enough Money! You need $%item_price% for %item_quantity% %item_name%.'
 notEnoughItems: "&cYou don't have enough items to sell!"
-inventoryFull: '&cYour inventory was full! Items(s) have dropped on the ground.'
+inventoryFull: '&cInventory full. Your item(s) have dropped on the ground!'
 
 items:
   BEDROCK:
