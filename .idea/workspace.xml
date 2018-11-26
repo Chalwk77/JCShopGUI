@@ -8,9 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7c5e7385-042f-49a7-ac88-5fceb0060989" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/inventoryClickHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jericraft/inventoryClickHandler.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,56 +26,13 @@
   <component name="CoverageViewManager">
     <option name="myElementSize" value="241" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1337392990">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.40" value="2" />
-          <entry key="project.open.time.55" value="1" />
-          <entry key="project.open.time.59" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="16" />
-          <entry key="yml" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="16" />
-          <entry key="YAML" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="5017" />
-          <entry key="txt" value="21" />
-          <entry key="yml" value="1271" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="5017" />
-          <entry key="PLAIN_TEXT" value="21" />
-          <entry key="YAML" value="1271" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="182" column="125" selection-start-line="182" selection-start-column="125" selection-end-line="182" selection-end-column="125" />
+            <state relative-caret-position="392">
+              <caret line="167" column="37" lean-forward="true" selection-start-line="167" selection-start-column="37" selection-end-line="167" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="425">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -171,9 +127,9 @@
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/ConfigManager.java" />
         <option value="$PROJECT_DIR$/src/main/resources/items.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/vm315.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" />
       </list>
     </option>
@@ -212,6 +168,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,12 +214,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543209776100" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543264170198" />
     <property name="last_opened_file_path" value="C:/Bitnami/multicraft-2.2.1-3/apps/multicraft/servers/jericraft/plugins.disabled/CMI8.1.0.0.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -314,7 +270,21 @@
       <option name="project" value="LOCAL" />
       <updated>1543193492142</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed mathematical error.">
+      <created>1543209757363</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543209757363</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed mathematical error.">
+      <created>1543209789551</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543209789551</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -330,7 +300,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21268657" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21908316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -339,14 +309,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29698858" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2966805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49938875" weight="0.3281412" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32883817" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49938875" weight="0.2219917" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50061125" side_tool="true" weight="0.32869378" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32987553" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32917964" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3281412" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -393,13 +363,11 @@
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Moved InventoryClickEvent to a separate class called &quot;inventoryClickHandler&quot;." />
     <MESSAGE value="Fixed Typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Typo" />
+    <MESSAGE value="Fixed mathematical error." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed mathematical error." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -521,40 +489,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/ConfigManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/items.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/vm315.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="2426" column="18" lean-forward="true" selection-start-line="2426" selection-start-column="18" selection-end-line="2426" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-94">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/ConfigManager.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/items.yml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/vm315.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -582,17 +519,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="425">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="182" column="125" selection-start-line="182" selection-start-column="125" selection-end-line="182" selection-end-column="125" />
+        <state relative-caret-position="392">
+          <caret line="167" column="37" lean-forward="true" selection-start-line="167" selection-start-column="37" selection-end-line="167" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -17,9 +17,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.List;
-import java.util.Set;
-
 import static me.jericraft.main_menu.openMainMenu;
 
 public class entry_point extends JavaPlugin {
