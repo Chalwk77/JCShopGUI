@@ -7,7 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c5e7385-042f-49a7-ac88-5fceb0060989" name="Default Changelist" comment="Moved InventoryClickEvent to a separate class called &quot;inventoryClickHandler&quot;.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/ConfigManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/items.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/items.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/ConfigManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/category_BuildingBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jericraft/category_BuildingBlocks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/entry_point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jericraft/entry_point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/inventoryClickHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jericraft/inventoryClickHandler.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,39 +39,39 @@
     <session id="-1337392990">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.40" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.59" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="9" />
-          <entry key="yml" value="3" />
+          <entry key="java" value="15" />
+          <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="9" />
-          <entry key="YAML" value="3" />
+          <entry key="JAVA" value="15" />
+          <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="3640" />
-          <entry key="yml" value="224" />
+          <entry key="java" value="4946" />
+          <entry key="yml" value="1244" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="3640" />
-          <entry key="YAML" value="224" />
+          <entry key="JAVA" value="4946" />
+          <entry key="YAML" value="1244" />
         </counts>
       </usages-collector>
     </session>
@@ -69,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-404">
-              <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="79" />
+            <state relative-caret-position="306">
+              <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,14 +90,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="114" column="50" selection-start-line="114" selection-start-column="50" selection-end-line="114" selection-end-column="50" />
+            <state relative-caret-position="1023">
+              <caret line="165" column="33" lean-forward="true" selection-start-line="165" selection-start-column="33" selection-end-line="165" selection-end-column="33" />
               <folding>
-                <element signature="e#5976#5996#0" expanded="true" />
-                <element signature="e#8690#8710#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="911">
-              <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+            <state relative-caret-position="-94">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,11 +114,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+            <state relative-caret-position="510">
+              <caret line="2733" column="14" selection-start-line="2733" selection-start-column="14" selection-end-line="2733" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="30" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -123,24 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addItems</find>
-      <find>additems</find>
-      <find>initMenuIcons</find>
-      <find>addItems_</find>
-      <find>buildingBlocks_3</find>
-      <find>category_BuildingBlocks</find>
-      <find>addItems_BuildingBlocks_1</find>
-      <find>addItems_BuildingBlocks_4</find>
-      <find>addItems_Food_1</find>
-      <find>category_Food</find>
-      <find>category_DecorationBlocks</find>
-      <find>display</find>
-      <find>ChatColor.BLUE + &quot;item name&quot;</find>
-      <find>pattern</find>
-      <find>Material</find>
-      <find>1000</find>
-      <find>displayname</find>
-      <find>item name</find>
       <find>squar</find>
       <find>determine_action</find>
       <find>inventory</find>
@@ -150,9 +152,27 @@
       <find>play</find>
       <find>preload_category_BuildingBlocks</find>
       <find>openMainMenu</find>
-      <find>loadConfigManager</find>
       <find>spruce_door</find>
       <find>new ItemStack</find>
+      <find>loadBuildingBlocks</find>
+      <find>loadConfigManager</find>
+      <find>buy_price</find>
+      <find>getBigDecimal</find>
+      <find>item_name</find>
+      <find>copyDefaults</find>
+      <find>loadConfig</find>
+      <find>preloadMenu</find>
+      <find>.</find>
+      <find>toUpperCase</find>
+      <find>item_price</find>
+      <find>BIRCH_DOOR</find>
+      <find>stripped</find>
+      <find>STRIPPED_JUNGLE_LOG</find>
+      <find>lore</find>
+      <find>OAK_PRESSURE_PLATE</find>
+      <find>BOWL</find>
+      <find>BREAD</find>
+      <find>HELMET</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -180,14 +200,15 @@
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/determinePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/buy_sell_handler.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/items.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/ConfigManager.java" />
         <option value="$USER_HOME$/Downloads/worth.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/page_handler.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/ConfigManager.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/items.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/vm315.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
       </list>
     </option>
   </component>
@@ -225,8 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,10 +290,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543139497104" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543192102838" />
     <property name="last_opened_file_path" value="C:/Bitnami/multicraft-2.2.1-3/apps/multicraft/servers/jericraft/plugins.disabled/CMI8.1.0.0.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -336,7 +357,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.21055438" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21268657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -345,7 +366,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23364486" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29698858" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -467,9 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -485,13 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
           <caret line="114" column="7" lean-forward="true" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -516,44 +527,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/items.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
           <caret line="57" column="17" lean-forward="true" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/page_handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/ConfigManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -567,20 +544,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/page_handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-404">
-          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="79" />
+        <state relative-caret-position="252">
+          <caret line="17" selection-start-line="17" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/ConfigManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="911">
-          <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/items.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/vm315.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="2426" column="18" lean-forward="true" selection-start-line="2426" selection-start-column="18" selection-end-line="2426" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -589,12 +597,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="114" column="50" selection-start-line="114" selection-start-column="50" selection-end-line="114" selection-end-column="50" />
+        <state relative-caret-position="1023">
+          <caret line="165" column="33" lean-forward="true" selection-start-line="165" selection-start-column="33" selection-end-line="165" selection-end-column="33" />
           <folding>
-            <element signature="e#5976#5996#0" expanded="true" />
-            <element signature="e#8690#8710#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="2733" column="14" selection-start-line="2733" selection-start-column="14" selection-end-line="2733" selection-end-column="14" />
         </state>
       </provider>
     </entry>

@@ -17,7 +17,7 @@ import static me.jericraft.main_menu.createGuiItem;
 public class category_BuildingBlocks implements Listener {
 
     public static void addItems_BuildingBlocks_1() {
-        buildingBlocks_1.addItem(createGuiItem("item_name", new ArrayList<String>(Arrays.asList("5", "2", "16")), Material.STONE));
+        buildingBlocks_1.addItem(createGuiItem("item_name", new ArrayList<String>(Arrays.asList("lore")), Material.STONE));
         buildingBlocks_1.addItem(createGuiItem("item_name", new ArrayList<String>(Arrays.asList("lore")), Material.GRANITE));
         buildingBlocks_1.addItem(createGuiItem("item_name", new ArrayList<String>(Arrays.asList("lore")), Material.POLISHED_GRANITE));
         buildingBlocks_1.addItem(createGuiItem("item_name", new ArrayList<String>(Arrays.asList("lore")), Material.DIORITE));

@@ -23,24 +23,24 @@ import java.util.Set;
 import static me.jericraft.main_menu.openMainMenu;
 
 public class entry_point extends JavaPlugin {
-    private ConfigManager cfgm;
     private main_menu loadMenuIcons;
     private category_BuildingBlocks loadBuildingBlocks;
 
+    private static entry_point instance;
+    public static entry_point getInstance() { return instance; }
 
-    //public static entry_point plugin;
     public final String PLUGIN_PREFIX = ChatColor.translateAlternateColorCodes('&', getConfig().getString("PluginPrefix") + ChatColor.RESET);
     public static Economy econ = null;
 
     @Override
     public void onEnable() {
-        loadConfigManager();
+        instance = this;
         Bukkit.getServer().getPluginManager().registerEvents(new main_menu(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new category_BuildingBlocks(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new inventoryClickHandler(this), this);
         //Bukkit.getServer().getPluginManager().registerEvents(new page_handler(this), this);
 
-        if (!setupEconomy() ) {
+        if (!setupEconomy()) {
             getLogger().severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
             getServer().getPluginManager().disablePlugin(this);
             return;
@@ -99,17 +99,6 @@ public class entry_point extends JavaPlugin {
         return false;
     }
 
-    public void loadConfigManager(){
-        cfgm = new ConfigManager();
-        cfgm.setup();
-        cfgm.saveData();
-        cfgm.reloadData();
-//        Set<String> list = getConfig().getConfigurationSection("items").getKeys(false);
-//        for(String item_name : list) {
-//            System.out.println(item_name);
-//        }
-    }
-
     public void loadConfig() {
         getConfig().options().copyDefaults(true);
         saveConfig();
@@ -117,16 +106,16 @@ public class entry_point extends JavaPlugin {
 
     public void preloadMenu() {
         loadMenuIcons = new main_menu();
-        loadMenuIcons.initMenuIcons();
+        main_menu.initMenuIcons();
     }
 
     public void preload_category_BuildingBlocks() {
         loadBuildingBlocks = new category_BuildingBlocks();
-        loadBuildingBlocks.addItems_BuildingBlocks_1();
-        loadBuildingBlocks.addItems_BuildingBlocks_2();
-        loadBuildingBlocks.addItems_BuildingBlocks_3();
-        loadBuildingBlocks.addItems_BuildingBlocks_4();
-        loadBuildingBlocks.addItems_BuildingBlocks_5();
-        loadBuildingBlocks.addItems_BuildingBlocks_6();
+        category_BuildingBlocks.addItems_BuildingBlocks_1();
+        category_BuildingBlocks.addItems_BuildingBlocks_2();
+        category_BuildingBlocks.addItems_BuildingBlocks_3();
+        category_BuildingBlocks.addItems_BuildingBlocks_4();
+        category_BuildingBlocks.addItems_BuildingBlocks_5();
+        category_BuildingBlocks.addItems_BuildingBlocks_6();
     }
 }

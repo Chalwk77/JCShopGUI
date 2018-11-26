@@ -1,7 +1,6 @@
 package me.jericraft;
 
 import net.milkbowl.vault.economy.EconomyResponse;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -12,13 +11,10 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.PlayerInventory;
-import org.bukkit.inventory.meta.ItemMeta;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.List;
-
 import static me.jericraft.entry_point.econ;
 import static me.jericraft.main_menu.buildingBlocks_1;
 import static me.jericraft.main_menu.menu;
@@ -108,17 +104,24 @@ public class inventoryClickHandler implements Listener {
             }
 
             if (!clickedItem.getType().equals(Material.WITHER_SKELETON_SKULL)) {
-                List<String> lore = clickedItem.getItemMeta().getLore();
-                double buy_price = Integer.parseInt(lore.get(0));
-                double sell_price = Integer.parseInt(lore.get(1));
-                double item_quantity = Integer.parseInt(lore.get(2));
                 String item_name = mat.toString();
+                List<String> lore = clickedItem.getItemMeta().getLore();
+
+                String buy = plugin.getInstance().getConfig().getString("items." + item_name + ".buy");
+                double buy_price = Double.parseDouble(buy);
+
+                String sell = plugin.getInstance().getConfig().getString("items." + item_name + ".sell");
+                double sell_price = Double.parseDouble(sell);
+
+                String quantity = plugin.getInstance().getConfig().getString("items." + item_name + ".quantity");
+                double item_quantity = Double.parseDouble(quantity);
                 // ================= BUYING ================= //
+
                 if (event.isRightClick() && !event.isShiftClick()) {
                     EconomyResponse take_money = econ.withdrawPlayer(player, buy_price);
                     if (take_money.transactionSuccess()) {
                         HashMap<Integer, ItemStack> new_item = new HashMap<Integer, ItemStack>();
-                        new_item.putAll((player.getInventory().addItem(new ItemStack(mat, Integer.parseInt(lore.get(2))))));
+                        new_item.putAll((player.getInventory().addItem(new ItemStack(mat, Integer.parseInt(quantity)))));
                         if (!new_item.isEmpty()) {
                             Location loc = player.getLocation();
                             player.getWorld().dropItem(loc, clickedItem);
@@ -141,11 +144,26 @@ public class inventoryClickHandler implements Listener {
                 } else {
                     if (player.getInventory().contains(mat)) {
                         if (event.isLeftClick() && !event.isShiftClick()) {
-                            EconomyResponse give_money = econ.depositPlayer(player, sell_price);
-                            if (give_money.transactionSuccess()) {
-                                HashMap<Integer, ItemStack> new_item = new HashMap<Integer, ItemStack>();
-                                new_item.putAll((player.getInventory().removeItem(new ItemStack(mat, Integer.parseInt(lore.get(2))))));
-                                player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + sell_price))));
+                            int count = 0;
+                            for (ItemStack stack : player.getInventory().getContents()) {
+                                if (stack != null && stack.getType() == mat) {
+                                    count += stack.getAmount();
+                                    if (count < item_quantity) {
+                                        double d = (sell_price / count) * item_quantity;
+                                        DecimalFormat f = new DecimalFormat("##.00");
+                                        EconomyResponse give_money = econ.depositPlayer(player, (sell_price / count) * item_quantity);
+                                        if (give_money.transactionSuccess()) {
+                                            HashMap<Integer, ItemStack> new_item = new HashMap<Integer, ItemStack>();
+                                            new_item.putAll((player.getInventory().removeItem(new ItemStack(mat, count))));
+                                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + f.format(d)))));
+                                        }
+                                    } else if (count >= item_quantity) {
+                                        player.getInventory().removeItem(new ItemStack(mat, Integer.parseInt(quantity)));
+                                        EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / count) * item_quantity);
+                                        player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + (sell_price / count) * item_quantity))));
+                                        break;
+                                    }
+                                }
                             }
                         } else if (event.isLeftClick() && event.isShiftClick()) {
                             int count = 0;
@@ -157,6 +175,7 @@ public class inventoryClickHandler implements Listener {
                                         DecimalFormat f = new DecimalFormat("##.00");
                                         player.getInventory().remove(new ItemStack(mat, count));
                                         EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / count) * 64);
+                                        System.out.println("count was: " + count);
                                         if (give_money_mul.transactionSuccess()) {
                                             player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLShiftClick").replace("%item_quantity%", "" + count).replace("%item_name%", "" + mat.toString()).replace("%item_price%", "" + f.format(d)))));
                                         }
