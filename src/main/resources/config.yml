@@ -23,7 +23,7 @@ items:
     quantity: '1'
   STONE:
     buy: '0.5'
-    sell: '0.25'
+    sell: '0.5'
     quantity: '16'
   GRANITE:
     buy: '0.5'

@@ -149,9 +149,9 @@ public class inventoryClickHandler implements Listener {
                                 if (stack != null && stack.getType() == mat) {
                                     count += stack.getAmount();
                                     if (count < item_quantity) {
-                                        double d = (sell_price / count) * item_quantity;
+                                        double d = (sell_price / item_quantity) * count;
                                         DecimalFormat f = new DecimalFormat("##.00");
-                                        EconomyResponse give_money = econ.depositPlayer(player, (sell_price / count) * item_quantity);
+                                        EconomyResponse give_money = econ.depositPlayer(player, (sell_price / item_quantity) * count);
                                         if (give_money.transactionSuccess()) {
                                             HashMap<Integer, ItemStack> new_item = new HashMap<Integer, ItemStack>();
                                             new_item.putAll((player.getInventory().removeItem(new ItemStack(mat, count))));
@@ -159,8 +159,8 @@ public class inventoryClickHandler implements Listener {
                                         }
                                     } else if (count >= item_quantity) {
                                         player.getInventory().removeItem(new ItemStack(mat, Integer.parseInt(quantity)));
-                                        EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / count) * item_quantity);
-                                        player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + (sell_price / count) * item_quantity))));
+                                        EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / item_quantity));
+                                        player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + (sell_price / item_quantity)))));
                                         break;
                                     }
                                 }
@@ -175,7 +175,6 @@ public class inventoryClickHandler implements Listener {
                                         DecimalFormat f = new DecimalFormat("##.00");
                                         player.getInventory().remove(new ItemStack(mat, count));
                                         EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / count) * 64);
-                                        System.out.println("count was: " + count);
                                         if (give_money_mul.transactionSuccess()) {
                                             player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLShiftClick").replace("%item_quantity%", "" + count).replace("%item_name%", "" + mat.toString()).replace("%item_price%", "" + f.format(d)))));
                                         }
