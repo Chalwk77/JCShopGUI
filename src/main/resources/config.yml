@@ -61,7 +61,7 @@ items:
     quantity: '16'
   COARSE_DIRT:
     buy: '0.5'
-    sell: '0000'
+    sell: '0.25'
     quantity: '16'
   PODZOL:
     buy: '0.5'
@@ -965,7 +965,7 @@ items:
     quantity: '16'
   TRIPWIRE_HOOK:
     buy: '15'
-    sell: '0000'
+    sell: '10'
     quantity: '16'
   EMERALD_BLOCK:
     buy: '990'
@@ -1601,7 +1601,7 @@ items:
     quantity: '16'
   RED_GLAZED_TERRACOTTA:
     buy: '50'
-    sell: '0000'
+    sell: '40'
     quantity: '16'
   BLACK_GLAZED_TERRACOTTA:
     buy: '50'
