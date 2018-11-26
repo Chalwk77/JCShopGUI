@@ -155,7 +155,7 @@ public class inventoryClickHandler implements Listener {
                                         if (give_money.transactionSuccess()) {
                                             HashMap<Integer, ItemStack> new_item = new HashMap<Integer, ItemStack>();
                                             new_item.putAll((player.getInventory().removeItem(new ItemStack(mat, count))));
-                                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + f.format(d)))));
+                                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + count).replace("%item_name%", "" + item_name).replace("%item_price%", "" + f.format(d)))));
                                         }
                                     } else if (count >= item_quantity) {
                                         player.getInventory().removeItem(new ItemStack(mat, Integer.parseInt(quantity)));
