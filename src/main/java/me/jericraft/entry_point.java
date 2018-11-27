@@ -22,6 +22,9 @@ import static me.jericraft.main_menu.openMainMenu;
 public class entry_point extends JavaPlugin {
     private main_menu loadMenuIcons;
     private category_BuildingBlocks loadBuildingBlocks;
+    private category_DecorationBlocks loadDecorationBlocks;
+    private category_Redstone loadRedstoneItems;
+    private category_Transport loadTransportItems;
 
     private static entry_point instance;
     public static entry_point getInstance() { return instance; }
@@ -35,7 +38,6 @@ public class entry_point extends JavaPlugin {
         Bukkit.getServer().getPluginManager().registerEvents(new main_menu(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new category_BuildingBlocks(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new inventoryClickHandler(this), this);
-        //Bukkit.getServer().getPluginManager().registerEvents(new page_handler(this), this);
 
         if (!setupEconomy()) {
             getLogger().severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
@@ -44,7 +46,12 @@ public class entry_point extends JavaPlugin {
         }
         loadConfig();
         preloadMenu();
-        preload_category_BuildingBlocks();
+        preload_categories();
+        System.out.println("====================================================================");
+        System.out.println("JCShopGUI enabled.");
+        System.out.println("Author: Chalwk (Jericho Crosby)");
+        System.out.println("Copyright 2018 Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.");
+        System.out.println("====================================================================");
     }
 
     private boolean setupEconomy() {
@@ -106,7 +113,7 @@ public class entry_point extends JavaPlugin {
         main_menu.initMenuIcons();
     }
 
-    public void preload_category_BuildingBlocks() {
+    public void preload_categories() {
         loadBuildingBlocks = new category_BuildingBlocks();
         category_BuildingBlocks.addItems_BuildingBlocks_1();
         category_BuildingBlocks.addItems_BuildingBlocks_2();
@@ -114,5 +121,19 @@ public class entry_point extends JavaPlugin {
         category_BuildingBlocks.addItems_BuildingBlocks_4();
         category_BuildingBlocks.addItems_BuildingBlocks_5();
         category_BuildingBlocks.addItems_BuildingBlocks_6();
+
+        loadDecorationBlocks = new category_DecorationBlocks();
+        category_DecorationBlocks.addItems_decorationBlocks_1();
+        category_DecorationBlocks.addItems_decorationBlocks_2();
+        category_DecorationBlocks.addItems_decorationBlocks_3();
+        category_DecorationBlocks.addItems_decorationBlocks_4();
+        category_DecorationBlocks.addItems_decorationBlocks_5();
+
+        loadRedstoneItems = new category_Redstone();
+        category_Redstone.addItems_Redstone1();
+        category_Redstone.addItems_Redstone2();
+
+        loadTransportItems = new category_Transport();
+        category_Transport.addItems_Transport_1();
     }
 }

@@ -15,6 +15,16 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import static me.jericraft.category_Brewing.brewing_1;
+import static me.jericraft.category_BuildingBlocks.buildingBlocks_1;
+import static me.jericraft.category_Combat.combat_1;
+import static me.jericraft.category_DecorationBlocks.decorationBlocks_1;
+import static me.jericraft.category_Food.food_1;
+import static me.jericraft.category_Miscellaneous.miscellaneous_1;
+import static me.jericraft.category_Redstone.redstone_1;
+import static me.jericraft.category_Tools.tools_1;
+import static me.jericraft.category_Transport.transport_1;
+
 public class main_menu implements Listener {
 
     public static Inventory menu = org.bukkit.Bukkit.createInventory(null, 9, ChatColor.RED + "The Shop Menu");
@@ -30,16 +40,6 @@ public class main_menu implements Listener {
         menu.addItem(createGuiItem("Combat", new ArrayList<String>(Arrays.asList("data")), Material.GOLDEN_SWORD));
         menu.addItem(createGuiItem("Brewing", new ArrayList<String>(Arrays.asList("data")), Material.POTION));
     }
-
-    public static Inventory buildingBlocks_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
-    public static Inventory decorationBlocks_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Decoration Blocks (page 1)");
-    public static Inventory redstone_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Redstone (page 1)");
-    public static Inventory transport_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Transport (page 1)");
-    public static Inventory miscellaneous_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Misccellaneous (page 1)");
-    public static Inventory food_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Food (page 1)");
-    public static Inventory tools_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Tools (page 1)");
-    public static Inventory combat_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Combat (page 1)");
-    public static Inventory brewing_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Brewing E(page 1)");
 
     public static ItemStack createGuiItem(String name, ArrayList<String> desc, Material mat) {
         ItemStack i = new ItemStack(mat, 1);
@@ -57,11 +57,8 @@ public class main_menu implements Listener {
 
     @EventHandler
     public void onInventoryClick(InventoryClickEvent event) {
-        String invName = event.getInventory().getName();
-        if (!invName.equals(menu.getName()) && (!invName.equals(buildingBlocks_1.getName()))
-                && (!invName.equals(decorationBlocks_1.getName())) && (!invName.equals(redstone_1.getName())) && (!invName.equals(transport_1.getName()))
-                && (!invName.equals(miscellaneous_1.getName())) && (!invName.equals(food_1.getName())) && (!invName.equals(tools_1.getName()))
-                && (!invName.equals(combat_1.getName())) && (!invName.equals(brewing_1.getName()))) {
+        String invTitle = event.getInventory().getTitle();
+        if (!invTitle.contains("The Shop Menu")) {
             return;
         }
         if (event.getClick().equals(ClickType.NUMBER_KEY)) {

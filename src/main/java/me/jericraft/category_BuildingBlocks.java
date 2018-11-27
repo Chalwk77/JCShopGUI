@@ -7,15 +7,13 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static me.jericraft.main_menu.buildingBlocks_1;
 import static me.jericraft.main_menu.createGuiItem;
 
 public class category_BuildingBlocks implements Listener {
-
+    public static Inventory buildingBlocks_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
     public static void addItems_BuildingBlocks_1() {
         buildingBlocks_1.addItem(createGuiItem("item_name", new ArrayList<String>(Arrays.asList("lore")), Material.STONE));
         buildingBlocks_1.addItem(createGuiItem("item_name", new ArrayList<String>(Arrays.asList("lore")), Material.GRANITE));
@@ -74,7 +72,6 @@ public class category_BuildingBlocks implements Listener {
         nextPageMeta.setLore(Arrays.asList("Next Page (2) -->>"));
         nextPage.setItemMeta(nextPageMeta);
         buildingBlocks_1.setItem(53, new ItemStack(nextPage));
-
     }
 
     public static Inventory buildingBlocks_2 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 2)");
