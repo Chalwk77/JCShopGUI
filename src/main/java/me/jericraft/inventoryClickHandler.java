@@ -16,10 +16,11 @@ import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.List;
 
-import static me.jericraft.category_DecorationBlocks.*;
 import static me.jericraft.category_BuildingBlocks.*;
+import static me.jericraft.category_DecorationBlocks.*;
 import static me.jericraft.category_Redstone.*;
 import static me.jericraft.category_Transport.*;
+import static me.jericraft.category_Miscellaneous.*;
 import static me.jericraft.main_menu.menu;
 import static me.jericraft.entry_point.econ;
 
@@ -27,7 +28,6 @@ public class inventoryClickHandler implements Listener {
 
     private final entry_point plugin;
     private final FileConfiguration config;
-    private inventoryClickHandler thggg;
     public inventoryClickHandler(entry_point plugin) {
         this.plugin = plugin;
         config = plugin.getConfig();
@@ -40,9 +40,9 @@ public class inventoryClickHandler implements Listener {
                 && (!invName.equals(buildingBlocks_3.getName())) && (!invName.equals(buildingBlocks_4.getName())) && (!invName.equals(buildingBlocks_5.getName()))
                 && (!invName.equals(buildingBlocks_6.getName()) && (!invName.equals(decorationBlocks_1.getName()) && (!invName.equals(decorationBlocks_2.getName())
                 && (!invName.equals(decorationBlocks_3.getName())) && (!invName.equals(decorationBlocks_4.getName())) && (!invName.equals(decorationBlocks_5.getName()))
-                && (!invName.equals(redstone_1.getName())) && (!invName.equals(redstone_2.getName()) && (!invName.equals(transport_1.getName()))))))) {
-            return;
-        }
+                && (!invName.equals(redstone_1.getName())) && (!invName.equals(redstone_2.getName()) && (!invName.equals(transport_1.getName())
+                && (!invName.equals(miscellaneous_1.getName())) && (!invName.equals(miscellaneous_2.getName())) && (!invName.equals(miscellaneous_3.getName()))
+                && (!invName.equals(miscellaneous_4.getName())))))))) {return;}
 
         if (event.getClick().equals(ClickType.NUMBER_KEY)) {
             event.setCancelled(true);
@@ -162,9 +162,38 @@ public class inventoryClickHandler implements Listener {
                     player.openInventory(menu);
                 }
                 // ========== Miscellaneous ========== \\
+            } else if (invName.equals(miscellaneous_1.getName())) {
+                if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
+                    player.closeInventory();
+                    player.openInventory(miscellaneous_2);
+                } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
+                    player.closeInventory();
+                    player.openInventory(menu);
+                }
+            } else if (invName.equals(miscellaneous_2.getName())) {
+                if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
+                    player.closeInventory();
+                    player.openInventory(miscellaneous_3);
+                } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
+                    player.closeInventory();
+                    player.openInventory(miscellaneous_1);
+                }
+            } else if (invName.equals(miscellaneous_3.getName())) {
+                if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
+                    player.closeInventory();
+                    player.openInventory(miscellaneous_4);
+                } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
+                    player.closeInventory();
+                    player.openInventory(miscellaneous_2);
+                }
+            } else if (invName.equals(miscellaneous_4.getName())) {
+                if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
+                    player.closeInventory();
+                    player.openInventory(miscellaneous_3);
+                }
             }
 
-            //==================================================================/i stone===========================================================//
+            //===============================================================================================================================//
             if (!clickedItem.getType().equals(Material.WITHER_SKELETON_SKULL)) {
                 String item_name = mat.toString();
                 List<String> lore = clickedItem.getItemMeta().getLore();

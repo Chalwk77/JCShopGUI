@@ -2091,10 +2091,6 @@ items:
     buy: '20'
     sell: '15'
     quantity: '16'
-  TURTLE_EGG:
-    buy: '10'
-    sell: '8'
-    quantity: '1'
   COMPASS:
     buy: '35'
     sell: '30'
@@ -2354,6 +2350,87 @@ items:
   ENDER_EYE:
     buy: '80'
     sell: '60'
+    quantity: '1'
+
+  SHEEP_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  SHULKER_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  SILVERFISH_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  SKELETON_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  SKELETON_HORSE_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  SLIME_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  SPIDER_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  SQUID_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  STRAY_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  TROPICAL_FISH_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  TURTLE_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  VEX_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  VILLAGER_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  VINDICATOR_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  WITCH_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  WITHER_SKELETON_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  WOLF_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  ZOMBIE_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  ZOMBIE_HORSE_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
+    quantity: '1'
+  ZOMBIE_PIGMAN_SPAWN_EGG:
+    buy: '350'
+    sell: '100'
     quantity: '1'
   END_CRYSTAL:
     buy: '30000'

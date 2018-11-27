@@ -28,6 +28,7 @@ public class entry_point extends JavaPlugin {
     private category_DecorationBlocks loadDecorationBlocks;
     private category_Redstone loadRedstoneItems;
     private category_Transport loadTransportItems;
+    private category_Miscellaneous loadMiscellaneous;
 
     public final String PLUGIN_PREFIX = ChatColor.translateAlternateColorCodes('&', getConfig().getString("PluginPrefix") + ChatColor.RESET);
     public static Economy econ = null;
@@ -46,11 +47,12 @@ public class entry_point extends JavaPlugin {
         loadConfig();
         preloadMenu();
         preload_categories();
-        System.out.println("====================================================================");
+        System.out.println("==================================================================================");
         System.out.println("JCShopGUI enabled.");
         System.out.println("Author: Chalwk (Jericho Crosby)");
         System.out.println("Copyright 2018 Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.");
-        System.out.println("====================================================================");
+        System.out.println("Many thanks for @NoCash for helping with item buy/sell prices and item quantities.");
+        System.out.println("==================================================================================");
     }
 
     private boolean setupEconomy() {
@@ -134,5 +136,11 @@ public class entry_point extends JavaPlugin {
 
         loadTransportItems = new category_Transport();
         category_Transport.addItems_Transport_1();
+
+        loadMiscellaneous = new category_Miscellaneous();
+        category_Miscellaneous.addItems_Miscellaneous_1();
+        category_Miscellaneous.addItems_Miscellaneous_2();
+        category_Miscellaneous.addItems_Miscellaneous_3();
+        category_Miscellaneous.addItems_Miscellaneous_4();
     }
 }

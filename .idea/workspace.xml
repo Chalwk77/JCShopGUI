@@ -6,34 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5e7385-042f-49a7-ac88-5fceb0060989" name="Default Changelist" comment="Bug fix.">
+    <list default="true" id="7c5e7385-042f-49a7-ac88-5fceb0060989" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Brewing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Brewing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Combat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_DecorationBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_DecorationBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Food.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Tools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Transport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/category_Brewing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jericraft/category_Brewing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/category_BuildingBlocks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/category_Combat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/category_DecorationBlocks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/category_Food.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/category_Miscellaneous.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/category_Redstone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/category_Tools.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jericraft/category_Tools.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/category_Transport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/entry_point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jericraft/entry_point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/inventoryClickHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jericraft/inventoryClickHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/main_menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jericraft/main_menu.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,10 +31,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Food.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="251">
+              <caret line="171" column="17" lean-forward="true" selection-start-line="171" selection-start-column="17" selection-end-line="171" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,10 +43,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="57" column="165" selection-start-line="57" selection-start-column="165" selection-end-line="57" selection-end-column="165" />
+            <state relative-caret-position="263">
+              <caret line="2397" column="17" lean-forward="true" selection-start-line="2397" selection-start-column="17" selection-end-line="2397" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="129" column="59" lean-forward="true" selection-start-line="129" selection-start-column="59" selection-end-line="129" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,10 +64,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+            <state relative-caret-position="212">
+              <caret line="95" column="98" selection-start-line="95" selection-start-column="89" selection-end-line="95" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,15 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getBigDecimal</find>
-      <find>item_name</find>
-      <find>copyDefaults</find>
-      <find>loadConfig</find>
-      <find>.</find>
-      <find>toUpperCase</find>
-      <find>item_price</find>
-      <find>BIRCH_DOOR</find>
-      <find>STRIPPED_JUNGLE_LOG</find>
       <find>lore</find>
       <find>OAK_PRESSURE_PLATE</find>
       <find>BOWL</find>
@@ -129,6 +107,15 @@
       <find>ItemMeta</find>
       <find>runThisFunction</find>
       <find>preload_categories</find>
+      <find>thggg</find>
+      <find>plugin</find>
+      <find>stone</find>
+      <find>SPIDER_SPAWN_EGG</find>
+      <find>SPAWN_EGG</find>
+      <find>nether_wart</find>
+      <find>eye_</find>
+      <find>ender_e</find>
+      <find>TURTLE_EGG</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Jericho\IdeaProjects\JCShopGUI\src\main\java\me\jericraft</dir>
@@ -161,19 +148,19 @@
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/ConfigManager.java" />
         <option value="$PROJECT_DIR$/src/main/resources/items.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/vm315.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Food.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_DecorationBlocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Combat.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Brewing.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Transport.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Tools.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
       </list>
     </option>
   </component>
@@ -265,7 +252,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543296380700" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543299009295" />
     <property name="last_opened_file_path" value="C:/Bitnami/multicraft-2.2.1-3/apps/multicraft/servers/jericraft/plugins.disabled/CMI8.1.0.0.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -353,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543283091950</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed the way Lore is delivered and amended each line to buy/sell/quantity.">
+      <created>1543296449727</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543296449727</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -369,7 +363,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21908316" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21908316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -378,7 +372,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32883817" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3547718" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3547718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -439,7 +433,8 @@
     <MESSAGE value="Fixed another mathematical error." />
     <MESSAGE value="Added Decoration Blocks, Redstone items and Transport items." />
     <MESSAGE value="Bug fix." />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix." />
+    <MESSAGE value="Changed the way Lore is delivered and amended each line to buy/sell/quantity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the way Lore is delivered and amended each line to buy/sell/quantity." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -512,43 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="867" column="13" lean-forward="true" selection-start-line="867" selection-start-column="13" selection-end-line="867" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="83" column="17" lean-forward="true" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Transport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -556,30 +514,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="84" selection-start-line="37" selection-start-column="84" selection-end-line="37" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Tools.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="86" column="81" lean-forward="true" selection-start-line="86" selection-start-column="81" selection-end-line="86" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -628,11 +566,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="57" column="165" selection-start-line="57" selection-start-column="165" selection-end-line="57" selection-end-column="165" />
+        <state relative-caret-position="250">
+          <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="16" selection-start-line="16" selection-end-line="60" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="60" selection-start-line="60" selection-end-line="71" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="171" column="17" lean-forward="true" selection-start-line="171" selection-start-column="17" selection-end-line="171" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="129" column="59" lean-forward="true" selection-start-line="129" selection-start-column="59" selection-end-line="129" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="95" column="98" selection-start-line="95" selection-start-column="89" selection-end-line="95" selection-end-column="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="2397" column="17" lean-forward="true" selection-start-line="2397" selection-start-column="17" selection-end-line="2397" selection-end-column="17" />
         </state>
       </provider>
     </entry>
