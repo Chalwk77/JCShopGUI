@@ -2051,6 +2051,22 @@ items:
     buy: '5'
     sell: '2.5'
     quantity: '16'
+  PUFFERFISH_BUCKET:
+    buy: '5'
+    sell: '2.5'
+    quantity: '1'
+  SALMON_BUCKET:
+    buy: '5'
+    sell: '2.5'
+    quantity: '1'
+  COD_BUCKET:
+    buy: '5'
+    sell: '2.5'
+    quantity: '1'
+  TROPICAL_FISH_BUCKET:
+    buy: '5'
+    sell: '2.5'
+    quantity: '1'
   MILK_BUCKET:
     buy: '30'
     sell: '25'
@@ -2351,7 +2367,6 @@ items:
     buy: '80'
     sell: '60'
     quantity: '1'
-
   SHEEP_SPAWN_EGG:
     buy: '350'
     sell: '100'
