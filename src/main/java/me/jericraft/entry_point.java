@@ -29,6 +29,7 @@ public class entry_point extends JavaPlugin {
     private category_Redstone loadRedstoneItems;
     private category_Transport loadTransportItems;
     private category_Miscellaneous loadMiscellaneous;
+    private category_Food loadFood;
 
     public final String PLUGIN_PREFIX = ChatColor.translateAlternateColorCodes('&', getConfig().getString("PluginPrefix") + ChatColor.RESET);
     public static Economy econ = null;
@@ -142,5 +143,8 @@ public class entry_point extends JavaPlugin {
         category_Miscellaneous.addItems_Miscellaneous_2();
         category_Miscellaneous.addItems_Miscellaneous_3();
         category_Miscellaneous.addItems_Miscellaneous_4();
+
+        loadFood = new category_Food();
+        category_Food.addItems_Food_1();
     }
 }

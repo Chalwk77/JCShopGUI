@@ -21,6 +21,7 @@ import static me.jericraft.category_DecorationBlocks.*;
 import static me.jericraft.category_Redstone.*;
 import static me.jericraft.category_Transport.*;
 import static me.jericraft.category_Miscellaneous.*;
+import static me.jericraft.category_Food.*;
 import static me.jericraft.main_menu.menu;
 import static me.jericraft.entry_point.econ;
 
@@ -190,6 +191,12 @@ public class inventoryClickHandler implements Listener {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
                     player.closeInventory();
                     player.openInventory(miscellaneous_3);
+                }
+                // ========== fOOD ========== \\
+            } else if (invName.equals(food_1.getName())) {
+                if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
+                    player.closeInventory();
+                    player.openInventory(menu);
                 }
             }
 

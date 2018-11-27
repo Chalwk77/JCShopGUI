@@ -2367,85 +2367,205 @@ items:
     buy: '80'
     sell: '60'
     quantity: '1'
+  BAT_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  BLAZE_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  CAVE_SPIDER_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  CHICKEN_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  COD_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  COW_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  CREEPER_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  DOLPHIN_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  DONKEY_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  DROWNED_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  ELDER_GUARDIAN_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  ENDERMAN_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  ENDERMITE_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  EVOKER_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  GHAST_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  GUARDIAN_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  HORSE_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  HUSK_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  LLAMA_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  MAGMA_CUBE_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  MOOSHROOM_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  MULE_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  OCELOT_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  PARROT_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  PHANTOM_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  PIG_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  POLAR_BEAR_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  PUFFERFISH_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  RABBIT_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
+  SALMON_SPAWN_EGG:
+    buy: '350'
+    sell: '175'
+    quantity: '1'
   SHEEP_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   SHULKER_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   SILVERFISH_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   SKELETON_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   SKELETON_HORSE_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   SLIME_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   SPIDER_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   SQUID_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   STRAY_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   TROPICAL_FISH_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   TURTLE_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   VEX_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   VILLAGER_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   VINDICATOR_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   WITCH_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   WITHER_SKELETON_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   WOLF_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   ZOMBIE_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   ZOMBIE_HORSE_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   ZOMBIE_PIGMAN_SPAWN_EGG:
     buy: '350'
-    sell: '100'
+    sell: '175'
     quantity: '1'
   END_CRYSTAL:
     buy: '30000'
