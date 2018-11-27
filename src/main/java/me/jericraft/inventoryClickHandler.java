@@ -22,6 +22,9 @@ import static me.jericraft.category_Redstone.*;
 import static me.jericraft.category_Transport.*;
 import static me.jericraft.category_Miscellaneous.*;
 import static me.jericraft.category_Food.*;
+import static me.jericraft.category_Tools.*;
+import static me.jericraft.category_Combat.*;
+import static me.jericraft.category_Brewing.*;
 import static me.jericraft.main_menu.menu;
 import static me.jericraft.entry_point.econ;
 
@@ -43,7 +46,8 @@ public class inventoryClickHandler implements Listener {
                 && (!invName.equals(decorationBlocks_3.getName())) && (!invName.equals(decorationBlocks_4.getName())) && (!invName.equals(decorationBlocks_5.getName()))
                 && (!invName.equals(redstone_1.getName())) && (!invName.equals(redstone_2.getName()) && (!invName.equals(transport_1.getName())
                 && (!invName.equals(miscellaneous_1.getName())) && (!invName.equals(miscellaneous_2.getName())) && (!invName.equals(miscellaneous_3.getName()))
-                && (!invName.equals(miscellaneous_4.getName()) && (!invName.equals(food_1.getName()))))))))) {return;}
+                && (!invName.equals(miscellaneous_4.getName()) && (!invName.equals(food_1.getName()) && (!invName.equals(tools_1.getName()))))
+                && (!invName.equals(combat_1.getName())))))))) {return;}
 
         if (event.getClick().equals(ClickType.NUMBER_KEY)) {
             event.setCancelled(true);
@@ -198,6 +202,18 @@ public class inventoryClickHandler implements Listener {
                     player.closeInventory();
                     player.openInventory(menu);
                 }
+                // ========== Tools ========== \\
+            } else if (invName.equals(tools_1.getName())) {
+                if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
+                    player.closeInventory();
+                    player.openInventory(menu);
+                }
+                // ========== Combat ========== \\
+            } else if (invName.equals(combat_1.getName())) {
+                if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
+                    player.closeInventory();
+                    player.openInventory(menu);
+                }
             }
             //===============================================================================================================================//
             if (!clickedItem.getType().equals(Material.WITHER_SKELETON_SKULL)) {
@@ -212,85 +228,89 @@ public class inventoryClickHandler implements Listener {
 
                 String quantity = plugin.getInstance().getConfig().getString("items." + item_name + ".quantity");
                 double item_quantity = Double.parseDouble(quantity);
-                // ================= BUYING ================= //
-
-                if (event.isRightClick() && !event.isShiftClick()) {
-                    EconomyResponse take_money = econ.withdrawPlayer(player, buy_price);
-                    if (take_money.transactionSuccess()) {
-                        HashMap<Integer, ItemStack> new_item = new HashMap<Integer, ItemStack>();
-                        new_item.putAll((player.getInventory().addItem(new ItemStack(mat, Integer.parseInt(quantity)))));
-                        if (!new_item.isEmpty()) {
-                            Location loc = player.getLocation();
-                            player.getWorld().dropItem(loc, clickedItem);
-                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("inventoryFull")));
+                int intCount_placeholder = 0;
+                if (buy_price != intCount_placeholder) {
+                    // ================= BUYING ================= //
+                    if (event.isRightClick() && !event.isShiftClick()) {
+                        EconomyResponse take_money = econ.withdrawPlayer(player, buy_price);
+                        if (take_money.transactionSuccess()) {
+                            HashMap<Integer, ItemStack> new_item = new HashMap<Integer, ItemStack>();
+                            new_item.putAll((player.getInventory().addItem(new ItemStack(mat, Integer.parseInt(quantity)))));
+                            if (!new_item.isEmpty()) {
+                                Location loc = player.getLocation();
+                                player.getWorld().dropItem(loc, clickedItem);
+                                player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("inventoryFull")));
+                            } else {
+                                player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("buyRClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + buy_price))));
+                            }
                         } else {
-                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("buyRClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + buy_price))));
+                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughMoney").replace("%item_price%", "" + buy_price).replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name))));
                         }
+                    } else if (event.isRightClick() && event.isShiftClick()) {
+                        EconomyResponse take_money_mul = econ.withdrawPlayer(player, (buy_price / item_quantity) * 64);
+                        if (take_money_mul.transactionSuccess()) {
+                            player.getInventory().addItem(new ItemStack(mat, 64));
+                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("buyRShiftClick").replace("%item_quantity%", "" + 64).replace("%item_name%", "" + item_name).replace("%item_price%", "" + (buy_price / item_quantity) * 64))));
+                        } else {
+                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughMoney").replace("%item_price%", "" + buy_price).replace("%item_name%", "" + item_name).replace("%item_quantity%", "" + 64))));
+                        }
+                        // ================= SELLING ================= //
                     } else {
-                        player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughMoney").replace("%item_price%", "" + buy_price).replace("%item_name%", "" + item_name))));
+                        if (player.getInventory().contains(mat)) {
+                            if (event.isLeftClick() && !event.isShiftClick()) {
+                                int count = 0;
+                                for (ItemStack stack : player.getInventory().getContents()) {
+                                    if (stack != null && stack.getType() == mat) {
+                                        count += stack.getAmount();
+                                        if (count < item_quantity) {
+                                            double d = (sell_price / item_quantity) * count;
+                                            DecimalFormat f = new DecimalFormat("##0.###");
+                                            EconomyResponse give_money = econ.depositPlayer(player, (sell_price / item_quantity) * count);
+                                            if (give_money.transactionSuccess()) {
+                                                HashMap<Integer, ItemStack> new_item = new HashMap<Integer, ItemStack>();
+                                                new_item.putAll((player.getInventory().removeItem(new ItemStack(mat, count))));
+                                                player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + count).replace("%item_name%", "" + item_name).replace("%item_price%", "" + f.format(d)))));
+                                            }
+                                        } else if (count >= item_quantity) {
+                                            double d = (sell_price / item_quantity) * item_quantity;
+                                            DecimalFormat f = new DecimalFormat("##0.###");
+                                            player.getInventory().removeItem(new ItemStack(mat, Integer.parseInt(quantity)));
+                                            EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / item_quantity));
+                                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + f.format(d)))));
+                                            break;
+                                        }
+                                    }
+                                }
+                            } else if (event.isLeftClick() && event.isShiftClick()) {
+                                int count = 0;
+                                for (ItemStack stack : player.getInventory().getContents()) {
+                                    if (stack != null && stack.getType() == mat) {
+                                        count += stack.getAmount();
+                                        if (count < 64) {
+                                            double d = (sell_price / count) * 64;
+                                            DecimalFormat f = new DecimalFormat("##0.###");
+                                            player.getInventory().remove(new ItemStack(mat, count));
+                                            EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / count) * 64);
+                                            if (give_money_mul.transactionSuccess()) {
+                                                player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLShiftClick").replace("%item_quantity%", "" + count).replace("%item_name%", "" + mat.toString()).replace("%item_price%", "" + f.format(d)))));
+                                            }
+                                        } else if (count >= 64) {
+                                            player.getInventory().removeItem(new ItemStack(mat, 64));
+                                            EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / item_quantity) * 64);
+                                            if (give_money_mul.transactionSuccess()) {
+                                                player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLShiftClick").replace("%item_quantity%", "" + 64).replace("%item_name%", "" + mat.toString()).replace("%item_price%", "" + (sell_price / item_quantity) * 64))));
+                                            }
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                        } else {
+                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughItems"))));
+                        }
                     }
-                } else if (event.isRightClick() && event.isShiftClick()) {
-                    EconomyResponse take_money_mul = econ.withdrawPlayer(player, (buy_price / item_quantity) * 64);
-                    if (take_money_mul.transactionSuccess()) {
-                        player.getInventory().addItem(new ItemStack(mat, 64));
-                        player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("buyRShiftClick").replace("%item_quantity%", "" + 64).replace("%item_name%", "" + item_name).replace("%item_price%", "" + (buy_price / item_quantity) * 64))));
-                    } else {
-                        player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughMoney").replace("%item_price%", "" + buy_price).replace("%item_name%", "" + item_name).replace("%item_quantity%", "" + 64))));
-                    }
-                    // ================= SELLING ================= //
                 } else {
-                    if (player.getInventory().contains(mat)) {
-                        if (event.isLeftClick() && !event.isShiftClick()) {
-                            int count = 0;
-                            for (ItemStack stack : player.getInventory().getContents()) {
-                                if (stack != null && stack.getType() == mat) {
-                                    count += stack.getAmount();
-                                    if (count < item_quantity) {
-                                        double d = (sell_price / item_quantity) * count;
-                                        DecimalFormat f = new DecimalFormat("##0.###");
-                                        EconomyResponse give_money = econ.depositPlayer(player, (sell_price / item_quantity) * count);
-                                        if (give_money.transactionSuccess()) {
-                                            HashMap<Integer, ItemStack> new_item = new HashMap<Integer, ItemStack>();
-                                            new_item.putAll((player.getInventory().removeItem(new ItemStack(mat, count))));
-                                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + count).replace("%item_name%", "" + item_name).replace("%item_price%", "" + f.format(d)))));
-                                        }
-                                    } else if (count >= item_quantity) {
-                                        double d = (sell_price / item_quantity) * item_quantity;
-                                        DecimalFormat f = new DecimalFormat("##0.###");
-                                        player.getInventory().removeItem(new ItemStack(mat, Integer.parseInt(quantity)));
-                                        EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / item_quantity));
-                                        player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + f.format(d)))));
-                                        break;
-                                    }
-                                }
-                            }
-                        } else if (event.isLeftClick() && event.isShiftClick()) {
-                            int count = 0;
-                            for (ItemStack stack : player.getInventory().getContents()) {
-                                if (stack != null && stack.getType() == mat) {
-                                    count += stack.getAmount();
-                                    if (count < 64) {
-                                        double d = (sell_price / count) * 64;
-                                        DecimalFormat f = new DecimalFormat("##0.###");
-                                        player.getInventory().remove(new ItemStack(mat, count));
-                                        EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / count) * 64);
-                                        if (give_money_mul.transactionSuccess()) {
-                                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLShiftClick").replace("%item_quantity%", "" + count).replace("%item_name%", "" + mat.toString()).replace("%item_price%", "" + f.format(d)))));
-                                        }
-                                    } else if (count >= 64) {
-                                        player.getInventory().removeItem(new ItemStack(mat, 64));
-                                        EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / item_quantity) * 64);
-                                        if (give_money_mul.transactionSuccess()) {
-                                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLShiftClick").replace("%item_quantity%", "" + 64).replace("%item_name%", "" + mat.toString()).replace("%item_price%", "" + (sell_price / item_quantity) * 64))));
-                                        }
-                                        break;
-                                    }
-                                }
-                            }
-                        }
-                    } else {
-                        player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughItems"))));
-                    }
+                    player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.RED + "This item cannot be bought at this time.");
                 }
             }
         }

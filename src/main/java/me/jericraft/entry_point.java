@@ -1,10 +1,13 @@
 /*
  *  JeriCraft Shop GUI Plugin
  *  Copyright 2018 Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
+ *
+ *
+ *
  *  System.out.println(player.getName() + " - go to Building Blocks Inventory");
- *
- *
- *  The void keyword allows us to create methods which do not return a value.
+    for (int i = 1; i <= 5; i++) {
+        int num = i;
+    }
  */
 package me.jericraft;
 
@@ -30,6 +33,9 @@ public class entry_point extends JavaPlugin {
     private category_Transport loadTransportItems;
     private category_Miscellaneous loadMiscellaneous;
     private category_Food loadFood;
+    private category_Tools loadTools;
+    private category_Combat loadCombat;
+    private category_Brewing loadBrewing;
 
     public final String PLUGIN_PREFIX = ChatColor.translateAlternateColorCodes('&', getConfig().getString("PluginPrefix") + ChatColor.RESET);
     public static Economy econ = null;
@@ -146,5 +152,14 @@ public class entry_point extends JavaPlugin {
 
         loadFood = new category_Food();
         category_Food.addItems_Food_1();
+
+        loadTools = new category_Tools();
+        category_Tools.addItems_Tools_1();
+
+        loadCombat = new category_Combat();
+        category_Combat.addItems_Combat_1();
+
+        loadBrewing = new category_Brewing();
+        category_Brewing.addItems_Brewing_1();
     }
 }

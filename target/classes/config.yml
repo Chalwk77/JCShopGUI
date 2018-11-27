@@ -1776,11 +1776,11 @@ items:
   IRON_INGOT:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '5'
   GOLD_INGOT:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '5'
   IRON_SWORD:
     buy: '10'
     sell: '8'
@@ -1843,6 +1843,10 @@ items:
     buy: '10'
     sell: '8'
     quantity: '1'
+  MUSHROOM_STEM:
+    buy: '10'
+    sell: '6'
+    quantity: '12'
   GOLDEN_SWORD:
     buy: '20'
     sell: '15'
@@ -1866,7 +1870,7 @@ items:
   FEATHER:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '5'
   GUNPOWDER:
     buy: '5'
     sell: '2.5'
@@ -1894,11 +1898,11 @@ items:
   WHEAT_SEEDS:
     buy: '0.25'
     sell: '0.25'
-    quantity: '16'
+    quantity: '12'
   WHEAT:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '12'
   BREAD:
     buy: '30'
     sell: '25'
@@ -1982,7 +1986,7 @@ items:
   FLINT:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '10'
   PORKCHOP:
     buy: '40'
     sell: '30'
@@ -1990,7 +1994,7 @@ items:
   COOKED_PORKCHOP:
     buy: '60'
     sell: '40'
-    quantity: '16'
+    quantity: '12'
   PAINTING:
     buy: '10'
     sell: '8'
@@ -2003,6 +2007,16 @@ items:
     buy: '300'
     sell: '250'
     quantity: '1'
+  # ========== EXPERIMENTAL ========== #
+  ENCHANTED_BOOK>DIG_SPEEDx5:
+    buy: '2500'
+    sell: '200'
+    quantity: '1'
+  ENCHANTED_BOOK>SILK_TOUCHx1:
+    buy: '2500'
+    sell: '200'
+    quantity: '1'
+  #==================================================================#
   SIGN:
     buy: '2.5'
     sell: '2'

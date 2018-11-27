@@ -1776,11 +1776,11 @@ items:
   IRON_INGOT:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '5'
   GOLD_INGOT:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '5'
   IRON_SWORD:
     buy: '10'
     sell: '8'
@@ -1870,7 +1870,7 @@ items:
   FEATHER:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '5'
   GUNPOWDER:
     buy: '5'
     sell: '2.5'
@@ -1898,11 +1898,11 @@ items:
   WHEAT_SEEDS:
     buy: '0.25'
     sell: '0.25'
-    quantity: '16'
+    quantity: '12'
   WHEAT:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '12'
   BREAD:
     buy: '30'
     sell: '25'
@@ -1986,7 +1986,7 @@ items:
   FLINT:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '10'
   PORKCHOP:
     buy: '40'
     sell: '30'
@@ -1994,7 +1994,7 @@ items:
   COOKED_PORKCHOP:
     buy: '60'
     sell: '40'
-    quantity: '16'
+    quantity: '12'
   PAINTING:
     buy: '10'
     sell: '8'
