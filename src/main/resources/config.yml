@@ -1843,6 +1843,10 @@ items:
     buy: '10'
     sell: '8'
     quantity: '1'
+  MUSHROOM_STEM:
+    buy: '10'
+    sell: '6'
+    quantity: '12'
   GOLDEN_SWORD:
     buy: '20'
     sell: '15'

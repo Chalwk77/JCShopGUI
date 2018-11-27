@@ -34,12 +34,11 @@ public class main_menu implements Listener {
         menu.addItem(menuIcons("Decoration Items", new ArrayList<String>(Arrays.asList(ChatColor.GRAY + "5 pages")), Material.PEONY));
         menu.addItem(menuIcons("Redstone", new ArrayList<String>(Arrays.asList(ChatColor.GRAY + "2 pages")), Material.REDSTONE));
         menu.addItem(menuIcons("Transport", new ArrayList<String>(Arrays.asList(ChatColor.GRAY + "1 page")), Material.POWERED_RAIL));
-        menu.addItem(menuIcons("Miscellaneous", new ArrayList<String>(Arrays.asList("error")), Material.LAVA_BUCKET));
-        menu.addItem(menuIcons("Food", new ArrayList<String>(Arrays.asList(ChatColor.RED + "error")), Material.APPLE));
+        menu.addItem(menuIcons("Miscellaneous", new ArrayList<String>(Arrays.asList("4 pages")), Material.LAVA_BUCKET));
+        menu.addItem(menuIcons("Food", new ArrayList<String>(Arrays.asList(ChatColor.RED + "1 page")), Material.APPLE));
         menu.addItem(menuIcons("Tools", new ArrayList<String>(Arrays.asList(ChatColor.RED + "error")), Material.IRON_AXE));
         menu.addItem(menuIcons("Combat", new ArrayList<String>(Arrays.asList(ChatColor.RED + "error")), Material.GOLDEN_SWORD));
         menu.addItem(menuIcons("Brewing", new ArrayList<String>(Arrays.asList(ChatColor.RED + "error")), Material.POTION));
-
     }
 
     public static ItemStack menuIcons(String name, ArrayList<String> desc, Material mat) {

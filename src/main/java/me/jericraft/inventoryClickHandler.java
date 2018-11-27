@@ -43,7 +43,7 @@ public class inventoryClickHandler implements Listener {
                 && (!invName.equals(decorationBlocks_3.getName())) && (!invName.equals(decorationBlocks_4.getName())) && (!invName.equals(decorationBlocks_5.getName()))
                 && (!invName.equals(redstone_1.getName())) && (!invName.equals(redstone_2.getName()) && (!invName.equals(transport_1.getName())
                 && (!invName.equals(miscellaneous_1.getName())) && (!invName.equals(miscellaneous_2.getName())) && (!invName.equals(miscellaneous_3.getName()))
-                && (!invName.equals(miscellaneous_4.getName())))))))) {return;}
+                && (!invName.equals(miscellaneous_4.getName()) && (!invName.equals(food_1.getName()))))))))) {return;}
 
         if (event.getClick().equals(ClickType.NUMBER_KEY)) {
             event.setCancelled(true);
@@ -199,7 +199,6 @@ public class inventoryClickHandler implements Listener {
                     player.openInventory(menu);
                 }
             }
-
             //===============================================================================================================================//
             if (!clickedItem.getType().equals(Material.WITHER_SKELETON_SKULL)) {
                 String item_name = mat.toString();
@@ -255,7 +254,6 @@ public class inventoryClickHandler implements Listener {
                                             new_item.putAll((player.getInventory().removeItem(new ItemStack(mat, count))));
                                             player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + count).replace("%item_name%", "" + item_name).replace("%item_price%", "" + f.format(d)))));
                                         }
-                                        // greater than or equal to 16
                                     } else if (count >= item_quantity) {
                                         double d = (sell_price / item_quantity) * item_quantity;
                                         DecimalFormat f = new DecimalFormat("##0.###");

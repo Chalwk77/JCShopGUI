@@ -11,7 +11,7 @@ import java.util.Arrays;
 import static me.jericraft.main_menu.createGuiItem;
 
 public class category_Food {
-    public static Inventory food_1 = org.bukkit.Bukkit.createInventory(null, 45, ChatColor.RED + "Food (page 1)");
+    public static Inventory food_1 = org.bukkit.Bukkit.createInventory(null, 45, ChatColor.RED + "Food");
     public static void addItems_Food_1() {
         food_1.addItem(createGuiItem(ChatColor.BLUE + "item name", Material.APPLE));
         food_1.addItem(createGuiItem(ChatColor.BLUE + "item name", Material.MUSHROOM_STEM));
