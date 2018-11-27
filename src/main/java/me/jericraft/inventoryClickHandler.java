@@ -156,6 +156,11 @@ public class inventoryClickHandler implements Listener {
                     player.closeInventory();
                     player.openInventory(redstone_1);
                 }
+            } else if (invName.equals(transport_1.getName())) {
+                if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
+                    player.closeInventory();
+                    player.openInventory(menu);
+                }
             }
 
             //=============================================================================================================================//
