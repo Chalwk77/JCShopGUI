@@ -9,9 +9,6 @@
     <list default="true" id="7c5e7385-042f-49a7-ac88-5fceb0060989" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/entry_point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jericraft/entry_point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/inventoryClickHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jericraft/inventoryClickHandler.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="2068" column="17" selection-start-line="2068" selection-start-column="17" selection-end-line="2068" selection-end-column="17" />
+            <state relative-caret-position="652">
+              <caret line="2568" column="17" selection-start-line="2568" selection-start-column="17" selection-end-line="2568" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -66,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="95" column="98" selection-start-line="95" selection-start-column="89" selection-end-line="95" selection-end-column="98" />
+            <state relative-caret-position="25">
+              <caret line="135" selection-start-line="135" selection-end-line="154" selection-end-column="111" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,10 +83,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>BOWL</find>
-      <find>BREAD</find>
-      <find>HELMET</find>
-      <find>inventory</find>
       <find>loadDecorationBlocks</find>
       <find>loadBuildingBlocks</find>
       <find>[shop]</find>
@@ -114,8 +107,12 @@
       <find>ender_e</find>
       <find>TURTLE_EGG</find>
       <find>leather</find>
-      <find>SPAWN_EGG</find>
       <find>PUFFER</find>
+      <find>ghast</find>
+      <find>egg</find>
+      <find>bat_spawn</find>
+      <find>BAT_SPAWN_EGG</find>
+      <find>SPAWN_EGG</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Jericho\IdeaProjects\JCShopGUI\src\main\java\me\jericraft</dir>
@@ -252,7 +249,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543299297410" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543299694455" />
     <property name="last_opened_file_path" value="C:/Bitnami/multicraft-2.2.1-3/apps/multicraft/servers/jericraft/plugins.disabled/CMI8.1.0.0.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -354,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543299060472</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added missing items to config.yml">
+      <created>1543299331061</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1543299331061</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -370,7 +374,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21908316" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21908316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -379,7 +383,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32883817" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3547718" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20643154" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -442,7 +446,8 @@
     <MESSAGE value="Bug fix." />
     <MESSAGE value="Changed the way Lore is delivered and amended each line to buy/sell/quantity." />
     <MESSAGE value="Added items to the Miscellaneous category + Spawn Eggs to config.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added items to the Miscellaneous category + Spawn Eggs to config.yml" />
+    <MESSAGE value="Added missing items to config.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added missing items to config.yml" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -602,16 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="171" column="17" lean-forward="true" selection-start-line="171" selection-start-column="17" selection-end-line="171" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -624,8 +619,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="95" column="98" selection-start-line="95" selection-start-column="89" selection-end-line="95" selection-end-column="98" />
+        <state relative-caret-position="25">
+          <caret line="135" selection-start-line="135" selection-end-line="154" selection-end-column="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="171" column="17" lean-forward="true" selection-start-line="171" selection-start-column="17" selection-end-line="171" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -634,8 +639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="2068" column="17" selection-start-line="2068" selection-start-column="17" selection-end-line="2068" selection-end-column="17" />
+        <state relative-caret-position="652">
+          <caret line="2568" column="17" selection-start-line="2568" selection-start-column="17" selection-end-line="2568" selection-end-column="17" />
         </state>
       </provider>
     </entry>
