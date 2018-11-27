@@ -30,22 +30,32 @@ public class main_menu implements Listener {
     public static Inventory menu = org.bukkit.Bukkit.createInventory(null, 9, ChatColor.RED + "The Shop Menu");
 
     public static void initMenuIcons() {
-        menu.addItem(createGuiItem(ChatColor.BLUE + "Building Blocks", new ArrayList<String>(Arrays.asList("data")), Material.BRICKS));
-        menu.addItem(createGuiItem("Decoration Items", new ArrayList<String>(Arrays.asList("data")), Material.PEONY));
-        menu.addItem(createGuiItem("Redstone", new ArrayList<String>(Arrays.asList("data")), Material.REDSTONE));
-        menu.addItem(createGuiItem("Transport", new ArrayList<String>(Arrays.asList("data")), Material.POWERED_RAIL));
-        menu.addItem(createGuiItem("Miscellaneous", new ArrayList<String>(Arrays.asList("data")), Material.LAVA_BUCKET));
-        menu.addItem(createGuiItem("Food", new ArrayList<String>(Arrays.asList("data")), Material.APPLE));
-        menu.addItem(createGuiItem("Tools", new ArrayList<String>(Arrays.asList("data")), Material.IRON_AXE));
-        menu.addItem(createGuiItem("Combat", new ArrayList<String>(Arrays.asList("data")), Material.GOLDEN_SWORD));
-        menu.addItem(createGuiItem("Brewing", new ArrayList<String>(Arrays.asList("data")), Material.POTION));
+        menu.addItem(menuIcons(ChatColor.BLUE + "Building Blocks", new ArrayList<String>(Arrays.asList(ChatColor.GRAY + "5 pages")), Material.BRICKS));
+        menu.addItem(menuIcons("Decoration Items", new ArrayList<String>(Arrays.asList(ChatColor.GRAY + "5 pages")), Material.PEONY));
+        menu.addItem(menuIcons("Redstone", new ArrayList<String>(Arrays.asList(ChatColor.GRAY + "2 pages")), Material.REDSTONE));
+        menu.addItem(menuIcons("Transport", new ArrayList<String>(Arrays.asList(ChatColor.GRAY + "1 page")), Material.POWERED_RAIL));
+        menu.addItem(menuIcons("Miscellaneous", new ArrayList<String>(Arrays.asList("error")), Material.LAVA_BUCKET));
+        menu.addItem(menuIcons("Food", new ArrayList<String>(Arrays.asList(ChatColor.RED + "error")), Material.APPLE));
+        menu.addItem(menuIcons("Tools", new ArrayList<String>(Arrays.asList(ChatColor.RED + "error")), Material.IRON_AXE));
+        menu.addItem(menuIcons("Combat", new ArrayList<String>(Arrays.asList(ChatColor.RED + "error")), Material.GOLDEN_SWORD));
+        menu.addItem(menuIcons("Brewing", new ArrayList<String>(Arrays.asList(ChatColor.RED + "error")), Material.POTION));
+
     }
 
-    public static ItemStack createGuiItem(String name, ArrayList<String> desc, Material mat) {
+    public static ItemStack menuIcons(String name, ArrayList<String> desc, Material mat) {
         ItemStack i = new ItemStack(mat, 1);
         ItemMeta iMeta = i.getItemMeta();
         iMeta.setDisplayName(name);
         iMeta.setLore(desc);
+        i.setItemMeta(iMeta);
+        return i;
+    }
+
+    public static ItemStack createGuiItem(String name, Material mat) {
+        ItemStack i = new ItemStack(mat, 1);
+        ItemMeta iMeta = i.getItemMeta();
+        iMeta.setDisplayName(name);
+        iMeta.setLore(Arrays.asList(ChatColor.GREEN + "Buy for: $" + entry_point.getInstance().getConfig().getString("items." + mat + ".buy"), ChatColor.RED + "Sell for: $" + entry_point.getInstance().getConfig().getString("items." + mat + ".sell"), ChatColor.AQUA + "Quantity: " + entry_point.getInstance().getConfig().getString("items." + mat + ".quantity")));
         i.setItemMeta(iMeta);
         return i;
     }

@@ -20,14 +20,14 @@ import org.bukkit.entity.Player;
 import static me.jericraft.main_menu.openMainMenu;
 
 public class entry_point extends JavaPlugin {
+    private static entry_point instance;
+    public static entry_point getInstance() { return instance; }
+
     private main_menu loadMenuIcons;
     private category_BuildingBlocks loadBuildingBlocks;
     private category_DecorationBlocks loadDecorationBlocks;
     private category_Redstone loadRedstoneItems;
     private category_Transport loadTransportItems;
-
-    private static entry_point instance;
-    public static entry_point getInstance() { return instance; }
 
     public final String PLUGIN_PREFIX = ChatColor.translateAlternateColorCodes('&', getConfig().getString("PluginPrefix") + ChatColor.RESET);
     public static Economy econ = null;
@@ -36,7 +36,6 @@ public class entry_point extends JavaPlugin {
     public void onEnable() {
         instance = this;
         Bukkit.getServer().getPluginManager().registerEvents(new main_menu(), this);
-        Bukkit.getServer().getPluginManager().registerEvents(new category_BuildingBlocks(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new inventoryClickHandler(this), this);
 
         if (!setupEconomy()) {

@@ -27,7 +27,7 @@ public class inventoryClickHandler implements Listener {
 
     private final entry_point plugin;
     private final FileConfiguration config;
-
+    private inventoryClickHandler thggg;
     public inventoryClickHandler(entry_point plugin) {
         this.plugin = plugin;
         config = plugin.getConfig();
@@ -41,7 +41,6 @@ public class inventoryClickHandler implements Listener {
                 && (!invName.equals(buildingBlocks_6.getName()) && (!invName.equals(decorationBlocks_1.getName()) && (!invName.equals(decorationBlocks_2.getName())
                 && (!invName.equals(decorationBlocks_3.getName())) && (!invName.equals(decorationBlocks_4.getName())) && (!invName.equals(decorationBlocks_5.getName()))
                 && (!invName.equals(redstone_1.getName())) && (!invName.equals(redstone_2.getName()) && (!invName.equals(transport_1.getName()))))))) {
-            System.out.println(invName + " is not negated in onInventoryClick");
             return;
         }
 
@@ -104,7 +103,7 @@ public class inventoryClickHandler implements Listener {
                     player.closeInventory();
                     player.openInventory(buildingBlocks_5);
                 }
-            // ========== Decoration blocks ========== \\
+                // ========== Decoration blocks ========== \\
             } else if (invName.equals(decorationBlocks_1.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
                     player.closeInventory();
@@ -156,14 +155,16 @@ public class inventoryClickHandler implements Listener {
                     player.closeInventory();
                     player.openInventory(redstone_1);
                 }
+                // ========== Transport ========== \\
             } else if (invName.equals(transport_1.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
                     player.closeInventory();
                     player.openInventory(menu);
                 }
+                // ========== Miscellaneous ========== \\
             }
 
-            //=============================================================================================================================//
+            //==================================================================/i stone===========================================================//
             if (!clickedItem.getType().equals(Material.WITHER_SKELETON_SKULL)) {
                 String item_name = mat.toString();
                 List<String> lore = clickedItem.getItemMeta().getLore();

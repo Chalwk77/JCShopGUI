@@ -1,6 +1,6 @@
-###########################################
-# JeriCraft Shop GUI config file.
-# Copyright 2018 Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
+###########################################################################
+#                 JeriCraft Shop GUI config file.                         #
+#  Copyright 2018 Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.   #
 ###########################################################################
 
 PluginPrefix: "&7[&cJeriCraft&7]"
@@ -23,7 +23,7 @@ items:
     quantity: '1'
   STONE:
     buy: '0.5'
-    sell: '0.5'
+    sell: '0.25'
     quantity: '16'
   GRANITE:
     buy: '0.5'
@@ -132,15 +132,15 @@ items:
   GOLD_ORE:
     buy: '6'
     sell: '4'
-    quantity: '16'
+    quantity: '1'
   IRON_ORE:
     buy: '4'
     sell: '3'
-    quantity: '16'
+    quantity: '1'
   COAL_ORE:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   OAK_LOG:
     buy: '5'
     sell: '2.5'
@@ -246,13 +246,13 @@ items:
     sell: '0.5'
     quantity: '16'
   SPONGE:
-    buy: '30'
-    sell: '25'
-    quantity: '16'
+    buy: '300'
+    sell: '250'
+    quantity: '4'
   WET_SPONGE:
-    buy: '20'
-    sell: '166'
-    quantity: '16'
+    buy: '200'
+    sell: '150'
+    quantity: '6'
   GLASS:
     buy: '5'
     sell: '2.5'
@@ -260,15 +260,15 @@ items:
   LAPIS_ORE:
     buy: '10'
     sell: '10'
-    quantity: '16'
+    quantity: '1'
   LAPIS_BLOCK:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   DISPENSER:
     buy: '15'
     sell: '10'
-    quantity: '16'
+    quantity: '1'
   SANDSTONE:
     buy: '1'
     sell: '0.5'
@@ -292,7 +292,7 @@ items:
   NOTE_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   POWERED_RAIL:
     buy: '20'
     sell: '15'
@@ -304,7 +304,7 @@ items:
   STICKY_PISTON:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   COBWEB:
     buy: '5'
     sell: '2.5'
@@ -328,59 +328,59 @@ items:
   TUBE_CORAL:
     buy: '1'
     sell: '0.5'
-    quantity: '16'
+    quantity: '1'
   BRAIN_CORAL:
     buy: '1'
     sell: '0.5'
-    quantity: '16'
+    quantity: '1'
   BUBBLE_CORAL:
     buy: '1'
     sell: '0.5'
-    quantity: '16'
+    quantity: '1'
   FIRE_CORAL:
     buy: '1'
     sell: '0.5'
-    quantity: '16'
+    quantity: '1'
   HORN_CORAL:
     buy: '1'
     sell: '0.5'
-    quantity: '16'
+    quantity: '1'
   TUBE_CORAL_FAN:
     buy: '1'
     sell: '0.5'
-    quantity: '16'
+    quantity: '1'
   BRAIN_CORAL_FAN:
     buy: '1'
     sell: '0.5'
-    quantity: '16'
+    quantity: '1'
   BUBBLE_CORAL_FAN:
     buy: '1'
     sell: '0.5'
-    quantity: '16'
+    quantity: '1'
   FIRE_CORAL_FAN:
     buy: '1'
     sell: '0.5'
-    quantity: '16'
+    quantity: '1'
   HORN_CORAL_FAN:
     buy: '1'
     sell: '0.5'
-    quantity: '16'
+    quantity: '1'
   KELP:
     buy: '0.5'
     sell: '0.25'
-    quantity: '16'
+    quantity: '1'
   DRIED_KELP:
     buy: '1'
     sell: '0.5'
-    quantity: '16'
+    quantity: '1'
   DRIED_KELP_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   PISTON:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   WHITE_WOOL:
     buy: '10'
     sell: '8'
@@ -492,11 +492,11 @@ items:
   GOLD_BLOCK:
     buy: '60'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   IRON_BLOCK:
     buy: '50'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   SMOOTH_QUARTZ:
     buy: '10'
     sell: '8'
@@ -516,7 +516,7 @@ items:
   BOOKSHELF:
     buy: '30'
     sell: '25'
-    quantity: '16'
+    quantity: '4'
   MOSSY_COBBLESTONE:
     buy: '10'
     sell: '8'
@@ -524,7 +524,7 @@ items:
   OBSIDIAN:
     buy: '80'
     sell: '60'
-    quantity: '16'
+    quantity: '2'
   TORCH:
     buy: '5'
     sell: '2.5'
@@ -536,23 +536,23 @@ items:
   CHEST:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '4'
   DIAMOND_ORE:
     buy: '110'
     sell: '90'
-    quantity: '16'
+    quantity: '1'
   DIAMOND_BLOCK:
     buy: '900'
     sell: '700'
-    quantity: '16'
+    quantity: '1'
   CRAFTING_TABLE:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   FURNACE:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   LADDER:
     buy: '5'
     sell: '2.5'
@@ -568,43 +568,43 @@ items:
   LEVER:
     buy: '1.5'
     sell: '1'
-    quantity: '16'
+    quantity: '1'
   STONE_PRESSURE_PLATE:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '1'
   OAK_PRESSURE_PLATE:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '1'
   SPRUCE_PRESSURE_PLATE:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '1'
   BIRCH_PRESSURE_PLATE:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '1'
   JUNGLE_PRESSURE_PLATE:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '1'
   DARK_OAK_PRESSURE_PLATE:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '1'
   REDSTONE_ORE:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   REDSTONE_TORCH:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '1'
   STONE_BUTTON:
     buy: '1.5'
     sell: '1'
-    quantity: '16'
+    quantity: '1'
   SNOW_BLOCK:
     buy: '2.5'
     sell: '2'
@@ -624,7 +624,7 @@ items:
   JUKEBOX:
     buy: '50'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   OAK_FENCE:
     buy: '2.5'
     sell: '2'
@@ -796,47 +796,47 @@ items:
   TUBE_CORAL_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   BRAIN_CORAL_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   BUBBLE_CORAL_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   FIRE_CORAL_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   HORN_CORAL_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   TRIDENT:
     buy: '50'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   TURTLE_HELMET:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   PHANTOM_MEMBRANE:
     buy: '50'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   NAUTILUS_SHELL:
     buy: '15'
     sell: '10'
-    quantity: '16'
+    quantity: '1'
   HEART_OF_THE_SEA:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   CONDUIT:
     buy: '100'
     sell: '80'
-    quantity: '16'
+    quantity: '1'
   NETHER_BRICKS:
     buy: '5'
     sell: '2.5'
@@ -852,23 +852,23 @@ items:
   ENCHANTING_TABLE:
     buy: '150'
     sell: '130'
-    quantity: '16'
+    quantity: '1'
   BREWING_STAND:
     buy: '80'
     sell: '60'
-    quantity: '16'
+    quantity: '1'
   CAULDRON:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   END_STONE:
     buy: '5'
     sell: '2.5'
     quantity: '16'
   DRAGON_EGG:
-    buy: '200'
-    sell: '150'
-    quantity: '16'
+    buy: '20000'
+    sell: '15000'
+    quantity: '1'
   REDSTONE_LAMP:
     buy: '20'
     sell: '15'
@@ -960,7 +960,7 @@ items:
   ENDER_CHEST:
     buy: '200'
     sell: '180'
-    quantity: '16'
+    quantity: '1'
   TRIPWIRE_HOOK:
     buy: '15'
     sell: '10'
@@ -968,7 +968,7 @@ items:
   EMERALD_BLOCK:
     buy: '990'
     sell: '950'
-    quantity: '16'
+    quantity: '1'
   SPRUCE_STAIRS:
     buy: '2.5'
     sell: '2'
@@ -984,7 +984,7 @@ items:
   BEACON:
     buy: '300'
     sell: '280'
-    quantity: '16'
+    quantity: '1'
   COBBLESTONE_WALL:
     buy: '5'
     sell: '2.5'
@@ -996,11 +996,11 @@ items:
   FLOWER_POT:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   OAK_BUTTON:
     buy: '0.5'
     sell: '0.25'
-    quantity: '16'
+    quantity: '1'
   SPRUCE_BUTTON:
     buy: '0.5'
     sell: '0.25'
@@ -1008,51 +1008,51 @@ items:
   BIRCH_BUTTON:
     buy: '0.5'
     sell: '0.25'
-    quantity: '16'
+    quantity: '1'
   JUNGLE_BUTTON:
     buy: '0.5'
     sell: '0.25'
-    quantity: '16'
+    quantity: '1'
   ACACIA_BUTTON:
     buy: '0.5'
     sell: '0.25'
-    quantity: '16'
+    quantity: '1'
   DARK_OAK_BUTTON:
     buy: '0.5'
     sell: '0.25'
-    quantity: '16'
+    quantity: '1'
   ANVIL:
     buy: '120'
     sell: '100'
-    quantity: '16'
+    quantity: '1'
   TRAPPED_CHEST:
     buy: '10'
     sell: '10'
-    quantity: '16'
+    quantity: '2'
   LIGHT_WEIGHTED_PRESSURE_PLATE:
     buy: '10'
     sell: '9'
-    quantity: '16'
+    quantity: '1'
   HEAVY_WEIGHTED_PRESSURE_PLATE:
     buy: '15'
     sell: '10'
-    quantity: '16'
+    quantity: '1'
   DAYLIGHT_DETECTOR:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   REDSTONE_BLOCK:
     buy: '50'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   NETHER_QUARTZ_ORE:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   HOPPER:
     buy: '30'
     sell: '25'
-    quantity: '16'
+    quantity: '1'
   QUARTZ_BLOCK:
     buy: '30'
     sell: '25'
@@ -1076,7 +1076,7 @@ items:
   DROPPER:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   WHITE_TERRACOTTA:
     buy: '15'
     sell: '10'
@@ -1256,7 +1256,7 @@ items:
   SEA_LANTERN:
     buy: '100'
     sell: '80'
-    quantity: '16'
+    quantity: '1'
   HAY_BLOCK:
     buy: '70'
     sell: '60'
@@ -1332,15 +1332,15 @@ items:
   COAL_BLOCK:
     buy: '30'
     sell: '25'
-    quantity: '16'
+    quantity: '1'
   PACKED_ICE:
     buy: '50'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   BLUE_ICE:
     buy: '200'
     sell: '180'
-    quantity: '16'
+    quantity: '1'
   SUNFLOWER:
     buy: '5'
     sell: '2.5'
@@ -1468,79 +1468,79 @@ items:
   BONE_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   OBSERVER:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   WHITE_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
+    buy: '10000'
+    sell: '8000'
     quantity: '16'
   ORANGE_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   MAGENTA_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   LIGHT_BLUE_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   YELLOW_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   LIME_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   PINK_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   GRAY_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   LIGHT_GRAY_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   CYAN_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   PURPLE_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   BLUE_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   BROWN_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   GREEN_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   RED_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '10000'
+    sell: '8000'
+    quantity: '1'
   BLACK_SHULKER_BOX:
-    buy: '100'
-    sell: '80'
-    quantity: '16'
+    buy: '1000'
+    sell: '800'
+    quantity: '1'
   WHITE_GLAZED_TERRACOTTA:
     buy: '50'
     sell: '40'
@@ -1736,15 +1736,15 @@ items:
   IRON_SHOVEL:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   IRON_PICKAXE:
     buy: '20'
     sell: '10'
-    quantity: '16'
+    quantity: '1'
   IRON_AXE:
     buy: '20'
     sell: '10'
-    quantity: '16'
+    quantity: '1'
   APPLE:
     buy: '40'
     sell: '35'
@@ -1752,11 +1752,11 @@ items:
   BOW:
     buy: '15'
     sell: '10'
-    quantity: '16'
+    quantity: '1'
   FLINT_AND_STEEL:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   ARROW:
     buy: '1.5'
     sell: '1'
@@ -1772,7 +1772,7 @@ items:
   DIAMOND:
     buy: '100'
     sell: '80'
-    quantity: '16'
+    quantity: '1'
   IRON_INGOT:
     buy: '5'
     sell: '2.5'
@@ -1784,81 +1784,81 @@ items:
   IRON_SWORD:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   WOODEN_SWORD:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '1'
   WOODEN_SHOVEL:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '1'
   WOODEN_PICKAXE:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '1'
   WOODEN_AXE:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '1'
   STONE_SWORD:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   STONE_SHOVEL:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   STONE_PICKAXE:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   STONE_AXE:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   DIAMOND_SWORD:
     buy: '200'
     sell: '150'
-    quantity: '16'
+    quantity: '1'
   DIAMOND_SHOVEL:
     buy: '100'
     sell: '80'
-    quantity: '16'
+    quantity: '1'
   DIAMOND_PICKAXE:
     buy: '300'
     sell: '250'
-    quantity: '16'
+    quantity: '1'
   DIAMOND_AXE:
     buy: '250'
   STICK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   BOWL:
     buy: '1'
     sell: '0.25'
-    quantity: '16'
+    quantity: '1'
   MUSHROOM_STEW:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   GOLDEN_SWORD:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   GOLDEN_SHOVEL:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   GOLDEN_PICKAXE:
     buy: '30'
     sell: '25'
-    quantity: '16'
+    quantity: '1'
   GOLDEN_AXE:
     buy: '30'
     sell: '25'
-    quantity: '16'
+    quantity: '1'
   STRING:
     buy: '2.5'
     sell: '2'
@@ -1874,23 +1874,23 @@ items:
   WOODEN_HOE:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '1'
   STONE_HOE:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   IRON_HOE:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   DIAMOND_HOE:
     buy: '200'
     sell: '150'
-    quantity: '16'
+    quantity: '1'
   GOLDEN_HOE:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   WHEAT_SEEDS:
     buy: '0.25'
     sell: '0.25'
@@ -1906,79 +1906,79 @@ items:
   LEATHER_CHESTPLATE:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   LEATHER_LEGGINGS:
     buy: '15'
     sell: '10'
-    quantity: '16'
+    quantity: '1'
   LEATHER_BOOTS:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   CHAINMAIL_HELMET:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   CHAINMAIL_CHESTPLATE:
     buy: '80'
     sell: '60'
-    quantity: '16'
+    quantity: '1'
   CHAINMAIL_LEGGINGS:
     buy: '60'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   CHAINMAIL_BOOTS:
     buy: '30'
     sell: '25'
-    quantity: '16'
+    quantity: '1'
   HELMET:
     buy: '25'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   IRON_CHESTPLATE:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   IRON_LEGGINGS:
     buy: '35'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   IRON_BOOTS:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   DIAMOND_HELMET:
     buy: '500'
     sell: '450'
-    quantity: '16'
+    quantity: '1'
   DIAMOND_CHESTPLATE:
     buy: '800'
     sell: '700'
-    quantity: '16'
+    quantity: '1'
   DIAMOND_LEGGINGS:
     buy: '700'
     sell: '600'
-    quantity: '16'
+    quantity: '1'
   DIAMOND_BOOTS:
     buy: '400'
     sell: '300'
-    quantity: '16'
+    quantity: '1'
   GOLDEN_HELMET:
     buy: '50'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   GOLDEN_CHESTPLATE:
     buy: '80'
     sell: '60'
-    quantity: '16'
+    quantity: '1'
   GOLDEN_LEGGINGS:
     buy: '70'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   GOLDEN_BOOTS:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   FLINT:
     buy: '2.5'
     sell: '2'
@@ -1994,15 +1994,15 @@ items:
   PAINTING:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   GOLDEN_APPLE:
     buy: '140'
     sell: '120'
-    quantity: '16'
+    quantity: '1'
   ENCHANTED_GOLDEN_APPLE:
     buy: '300'
     sell: '250'
-    quantity: '16'
+    quantity: '1'
   SIGN:
     buy: '2.5'
     sell: '2'
@@ -2010,31 +2010,31 @@ items:
   OAK_DOOR:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '3'
   BUCKET:
     buy: '30'
     sell: '25'
-    quantity: '16'
+    quantity: '1'
   WATER_BUCKET:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   LAVA_BUCKET:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   MINECART:
     buy: '25'
     sell: '20'
-    quantity: '16'
+    quantity: '1'
   SADDLE:
     buy: '150'
     sell: '100'
-    quantity: '16'
+    quantity: '1'
   IRON_DOOR:
     buy: '30'
     sell: '25'
-    quantity: '16'
+    quantity: '3'
   REDSTONE:
     buy: '5'
     sell: '2.5'
@@ -2046,7 +2046,7 @@ items:
   OAK_BOAT:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   LEATHER:
     buy: '5'
     sell: '2.5'
@@ -2054,7 +2054,7 @@ items:
   MILK_BUCKET:
     buy: '30'
     sell: '25'
-    quantity: '16'
+    quantity: '1'
   BRICK:
     buy: '1'
     sell: '0.5'
@@ -2082,11 +2082,11 @@ items:
   CHEST_MINECART:
     buy: '30'
     sell: '25'
-    quantity: '16'
+    quantity: '1'
   FURNACE_MINECART:
     buy: '30'
     sell: '25'
-    quantity: '16'
+    quantity: '1'
   EGG:
     buy: '20'
     sell: '15'
@@ -2094,19 +2094,19 @@ items:
   TURTLE_EGG:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   COMPASS:
     buy: '35'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   FISHING_ROD:
     buy: '15'
     sell: '10'
-    quantity: '16'
+    quantity: '1'
   CLOCK:
     buy: '50'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   GLOWSTONE_DUST:
     buy: '30'
     sell: '25'
@@ -2210,75 +2210,75 @@ items:
   CAKE:
     buy: '50'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   WHITE_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   ORANGE_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   MAGENTA_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   LIGHT_BLUE_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   YELLOW_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   LIME_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   PINK_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   GRAY_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   LIGHT_GRAY_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   CYAN_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   PURPLE_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   BLUE_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   BROWN_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   GREEN_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   RED_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   BLACK_BED:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   REPEATER:
     buy: '50'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   COOKIE:
     buy: '30'
     sell: '25'
@@ -2286,7 +2286,7 @@ items:
   SHEARS:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   MELON_SLICE:
     buy: '1'
     sell: '0.25'
@@ -2322,7 +2322,7 @@ items:
   ENDER_PEARL:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   BLAZE_ROD:
     buy: '5'
     sell: '2.5'
@@ -2334,7 +2334,7 @@ items:
   GLASS_BOTTLE:
     buy: '15'
     sell: '10'
-    quantity: '16'
+    quantity: '6'
   SPIDER_EYE:
     buy: '2.5'
     sell: '2'
@@ -2342,7 +2342,7 @@ items:
   FERMENTED_SPIDER_EYE:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   BLAZE_POWDER:
     buy: '5'
     sell: '2.5'
@@ -2350,39 +2350,39 @@ items:
   MAGMA_CREAM:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   ENDER_EYE:
     buy: '80'
     sell: '60'
-    quantity: '16'
+    quantity: '1'
   END_CRYSTAL:
-    buy: '300'
-    sell: '250'
-    quantity: '16'
+    buy: '30000'
+    sell: '25000'
+    quantity: '1'
   GLISTERING_MELON_SLICE:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   EXPERIENCE_BOTTLE:
     buy: '200'
     sell: '150'
-    quantity: '16'
+    quantity: '1'
   FIRE_CHARGE:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   WRITABLE_BOOK:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   EMERALD:
     buy: '110'
     sell: '100'
-    quantity: '16'
+    quantity: '1'
   ITEM_FRAME:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   CARROT:
     buy: '10'
     sell: '8'
@@ -2406,39 +2406,39 @@ items:
   MAP:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   GOLDEN_CARROT:
     buy: '100'
     sell: '80'
-    quantity: '16'
+    quantity: '1'
   SKELETON_SKULL:
     buy: '100'
     sell: '80'
-    quantity: '16'
+    quantity: '1'
   PLAYER_HEAD:
     buy: '100'
     sell: '80'
-    quantity: '16'
+    quantity: '1'
   CREEPER_HEAD:
     buy: '100'
     sell: '80'
-    quantity: '16'
+    quantity: '1'
   DRAGON_HEAD:
-    buy: '800'
-    sell: '700'
-    quantity: '16'
+    buy: '80000'
+    sell: '70000'
+    quantity: '1'
   CARROT_ON_A_STICK:
     buy: '25'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   NETHER_STAR:
-    buy: '500'
-    sell: '450'
-    quantity: '16'
+    buy: '5000'
+    sell: '4500'
+    quantity: '1'
   PUMPKIN_PIE:
     buy: '80'
     sell: '60'
-    quantity: '16'
+    quantity: '1'
   FIREWORK_ROCKET:
     buy: '50'
     sell: '40'
@@ -2450,7 +2450,7 @@ items:
   COMPARATOR:
     buy: '60'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   NETHER_BRICK:
     buy: '5'
     sell: '2.5'
@@ -2462,11 +2462,11 @@ items:
   TNT_MINECART:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   HOPPER_MINECART:
     buy: '50'
     sell: '40'
-    quantity: '16'
+    quantity: '1'
   PRISMARINE_SHARD:
     buy: '30'
     sell: '25'
@@ -2498,27 +2498,27 @@ items:
   ARMOR_STAND:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   IRON_HORSE_ARMOR:
     buy: '100'
     sell: '80'
-    quantity: '16'
+    quantity: '1'
   GOLDEN_HORSE_ARMOR:
     buy: '200'
     sell: '150'
-    quantity: '16'
+    quantity: '1'
   DIAMOND_HORSE_ARMOR:
     buy: '300'
     sell: '250'
-    quantity: '16'
+    quantity: '1'
   LEAD:
     buy: '30'
     sell: '25'
-    quantity: '16'
+    quantity: '1'
   NAME_TAG:
     buy: '40'
     sell: '30'
-    quantity: '16'
+    quantity: '1'
   MUTTON:
     buy: '90'
     sell: '80'
@@ -2530,75 +2530,75 @@ items:
   BLACK_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   RED_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   GREEN_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   BROWN_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   BLUE_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   PURPLE_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   CYAN_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   LIGHT_GRAY_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   GRAY_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   PINK_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   LIME_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   YELLOW_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   LIGHT_BLUE_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   MAGENTA_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   ORANGE_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   WHITE_BANNER:
     buy: '60'
     sell: '50'
-    quantity: '16'
+    quantity: '1'
   SPRUCE_DOOR:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '3'
   BIRCH_DOOR:
     buy: '2.5'
     sell: '2'
-    quantity: '16'
+    quantity: '3'
   CHORUS_FRUIT:
     buy: '60'
     sell: '50'
@@ -2622,39 +2622,39 @@ items:
   SHIELD:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   ELYTRA:
     buy: '100000'
     sell: '80000'
-    quantity: '16'
+    quantity: '1'
   SPRUCE_BOAT:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   BIRCH_BOAT:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   JUNGLE_BOAT:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   ACACIA_BOAT:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   DARK_OAK_BOAT:
     buy: '5'
     sell: '2.5'
-    quantity: '16'
+    quantity: '1'
   TOTEM_OF_UNDYING:
-    buy: '1000'
-    sell: '800'
-    quantity: '16'
+    buy: '100000'
+    sell: '80000'
+    quantity: '1'
   SHULKER_SHELL:
-    buy: '40'
-    sell: '30'
-    quantity: '16'
+    buy: '40000'
+    sell: '30000'
+    quantity: '1'
   IRON_NUGGET:
     buy: '0.25'
     sell: '0.25'
@@ -2662,72 +2662,72 @@ items:
   MUSIC_DISC_13:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   MUSIC_DISC_CAT:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   MUSIC_DISC_BLOCKS:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   MUSIC_DISC_CHIRP:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   MUSIC_DISC_FAR:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   MUSIC_DISC_MALL:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   MUSIC_DISC_MELLOHI:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   MUSIC_DISC_STAL:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   MUSIC_DISC_STRAD:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   MUSIC_DISC_WARD:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   MUSIC_DISC_11:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   MUSIC_DISC_WAIT:
     buy: '20'
     sell: '15'
-    quantity: '16'
+    quantity: '1'
   DEAD_TUBE_CORAL_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   DEAD_BRAIN_CORAL_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   DEAD_BUBBLE_CORAL_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   DEAD_FIRE_CORAL_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   DEAD_HORN_CORAL_BLOCK:
     buy: '10'
     sell: '8'
-    quantity: '16'
+    quantity: '1'
   NETHER_WART_BLOCK:
     buy: '180'
     sell: '160'
-    quantity: '16'
+    quantity: '1'
