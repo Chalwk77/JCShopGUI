@@ -1,21 +1,17 @@
-###########################################################################
+#
 #                 JeriCraft Shop GUI config file.                         #
 #  Copyright 2018 Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.   #
-###########################################################################
-
-PluginPrefix: "&7[&cJeriCraft&7]"
-NoPermission: "&cAccess Denied."
-ReloadPlugin: "&aPlugin Reloaded"
+PluginPrefix: '&7[&cJeriCraft&7]'
+NoPermission: '&cAccess Denied.'
+ReloadPlugin: '&aPlugin Reloaded'
 GamemodeNotice: '&cYou must be in survival mode!'
-
 buyRClick: '&bYou bought &e%item_quantity% %item_name% &bfor &e$%item_price%'
 sellLClick: '&bYou sold &e%item_quantity% %item_name% &bfor &e$%item_price%'
 buyRShiftClick: '&bYou bought &e%item_quantity% %item_name% &bfor &e$%item_price%'
 sellLShiftClick: '&bYou sold &e%item_quantity% %item_name% &bfor &e$%item_price%'
 notEnoughMoney: '&cNot Enough Money! You need $%item_price% for %item_quantity% %item_name%.'
-notEnoughItems: "&cYou don't have enough items to sell!"
+notEnoughItems: '&cYou don''t have enough items to sell!'
 inventoryFull: '&cInventory full. Your item(s) have dropped on the ground!'
-
 items:
   BEDROCK:
     buy: '500000'
@@ -2947,3 +2943,7 @@ items:
     buy: '180'
     sell: '160'
     quantity: '1'
+  ENCHANTED_BOOK:
+    buy: '0'
+    sell: '0'
+    quantity: '0'

@@ -20,7 +20,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import static me.jericraft.main_menu.openMainMenu;
+import static me.jericraft.pageHandler.*;
 
 public class entry_point extends JavaPlugin {
     private static entry_point instance;
@@ -89,10 +89,10 @@ public class entry_point extends JavaPlugin {
                             if (!sender.hasPermission("jericraft.shop.gamemode.bypass")) {
                                 sender.sendMessage(PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', getConfig().getString("GamemodeNotice")));
                             } else {
-                                openMainMenu(player);
+                                openMainMenu(player, false);
                             }
                         } else if (player.getGameMode().equals(GameMode.SURVIVAL)) {
-                            openMainMenu(player);
+                            openMainMenu(player, false);
                         }
                     } else if (args.length >= 1) {
                         if (args[0].equalsIgnoreCase("reload")) {

@@ -16,6 +16,7 @@ import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.List;
 
+import static me.jericraft.pageHandler.*;
 import static me.jericraft.category_BuildingBlocks.*;
 import static me.jericraft.category_DecorationBlocks.*;
 import static me.jericraft.category_Redstone.*;
@@ -25,7 +26,7 @@ import static me.jericraft.category_Food.*;
 import static me.jericraft.category_Tools.*;
 import static me.jericraft.category_Combat.*;
 import static me.jericraft.category_Brewing.*;
-import static me.jericraft.main_menu.menu;
+
 import static me.jericraft.entry_point.econ;
 
 public class inventoryClickHandler implements Listener {
@@ -47,7 +48,9 @@ public class inventoryClickHandler implements Listener {
                 && (!invName.equals(redstone_1.getName())) && (!invName.equals(redstone_2.getName()) && (!invName.equals(transport_1.getName())
                 && (!invName.equals(miscellaneous_1.getName())) && (!invName.equals(miscellaneous_2.getName())) && (!invName.equals(miscellaneous_3.getName()))
                 && (!invName.equals(miscellaneous_4.getName()) && (!invName.equals(food_1.getName()) && (!invName.equals(tools_1.getName()))))
-                && (!invName.equals(combat_1.getName())))))))) {return;}
+                && (!invName.equals(combat_1.getName()) && (!invName.equals(brewing_1.getName()))))))))) {
+            return;
+        }
 
         if (event.getClick().equals(ClickType.NUMBER_KEY)) {
             event.setCancelled(true);
@@ -65,154 +68,120 @@ public class inventoryClickHandler implements Listener {
             // ========== Building blocks ========== \\
             if (invName.equals(buildingBlocks_1.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(buildingBlocks_2);
+                    openBuildingBlocksGUI(player, 2);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(menu);
+                    openMainMenu(player, true);
                 }
             } else if (invName.equals(buildingBlocks_2.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(buildingBlocks_3);
+                    openBuildingBlocksGUI(player, 3);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(buildingBlocks_1);
+                    openBuildingBlocksGUI(player, 1);
                 }
             } else if (invName.equals(buildingBlocks_3.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(buildingBlocks_4);
+                    openBuildingBlocksGUI(player, 4);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(buildingBlocks_2);
+                    openBuildingBlocksGUI(player, 2);
                 }
             } else if (invName.equals(buildingBlocks_4.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(buildingBlocks_5);
+                    openBuildingBlocksGUI(player, 5);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(buildingBlocks_3);
+                    openBuildingBlocksGUI(player, 3);
                 }
             } else if (invName.equals(buildingBlocks_5.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(buildingBlocks_6);
+                    openBuildingBlocksGUI(player, 6);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(buildingBlocks_4);
+                    openBuildingBlocksGUI(player, 4);
                 }
             } else if (invName.equals(buildingBlocks_6.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(buildingBlocks_5);
+                    openBuildingBlocksGUI(player, 5);
                 }
                 // ========== Decoration blocks ========== \\
             } else if (invName.equals(decorationBlocks_1.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(decorationBlocks_2);
+                    openDecorationGUI(player, 2);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(menu);
+                    openMainMenu(player, true);
                 }
             } else if (invName.equals(decorationBlocks_2.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(decorationBlocks_3);
+                    openDecorationGUI(player, 3);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(decorationBlocks_1);
+                    openDecorationGUI(player, 1);
                 }
             } else if (invName.equals(decorationBlocks_3.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(decorationBlocks_4);
+                    openDecorationGUI(player, 4);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(decorationBlocks_2);
+                    openDecorationGUI(player, 2);
                 }
             } else if (invName.equals(decorationBlocks_4.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(decorationBlocks_5);
+                    openDecorationGUI(player, 5);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(decorationBlocks_3);
+                    openDecorationGUI(player, 3);
                 }
             } else if (invName.equals(decorationBlocks_5.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(decorationBlocks_4);
+                    openDecorationGUI(player, 4);
                 }
                 // ========== Redstone ========== \\
             } else if (invName.equals(redstone_1.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(redstone_2);
+                    openRedstoneGUI(player, 2);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(menu);
+                    openMainMenu(player, true);
                 }
             } else if (invName.equals(redstone_2.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(redstone_1);
+                    openRedstoneGUI(player, 1);
                 }
                 // ========== Transport ========== \\
             } else if (invName.equals(transport_1.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(menu);
+                    openMainMenu(player, true);
                 }
                 // ========== Miscellaneous ========== \\
             } else if (invName.equals(miscellaneous_1.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(miscellaneous_2);
+                    openMiscellaneousGUI(player, 2);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(menu);
+                    openMainMenu(player, true);
                 }
             } else if (invName.equals(miscellaneous_2.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(miscellaneous_3);
+                    openMiscellaneousGUI(player, 3);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(miscellaneous_1);
+                    openMiscellaneousGUI(player, 1);
                 }
             } else if (invName.equals(miscellaneous_3.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("next_page")) {
-                    player.closeInventory();
-                    player.openInventory(miscellaneous_4);
+                    openMiscellaneousGUI(player, 4);
                 } else if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(miscellaneous_2);
+                    openMiscellaneousGUI(player, 2);
                 }
             } else if (invName.equals(miscellaneous_4.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(miscellaneous_3);
+                    openMiscellaneousGUI(player, 3);
                 }
                 // ========== fOOD ========== \\
             } else if (invName.equals(food_1.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(menu);
+                    openMainMenu(player, true);
                 }
                 // ========== Tools ========== \\
             } else if (invName.equals(tools_1.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(menu);
+                    openMainMenu(player, true);
                 }
                 // ========== Combat ========== \\
             } else if (invName.equals(combat_1.getName())) {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase("previous_page")) {
-                    player.closeInventory();
-                    player.openInventory(menu);
+                    openMainMenu(player, true);
                 }
             }
             //===============================================================================================================================//
@@ -229,6 +198,11 @@ public class inventoryClickHandler implements Listener {
                 String quantity = plugin.getInstance().getConfig().getString("items." + item_name + ".quantity");
                 double item_quantity = Double.parseDouble(quantity);
                 int intCount_placeholder = 0;
+
+//                EnchantmentStorageMeta meta = (EnchantmentStorageMeta) clickedItem.getItemMeta();
+//                Map<Enchantment, Integer> item_enchants = meta.getStoredEnchants();
+//                System.out.println("enchants are: " + item_enchants);
+
                 if (buy_price != intCount_placeholder) {
                     // ================= BUYING ================= //
                     if (event.isRightClick() && !event.isShiftClick()) {
@@ -310,7 +284,7 @@ public class inventoryClickHandler implements Listener {
                         }
                     }
                 } else {
-                    player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.RED + "This item cannot be bought at this time.");
+                    player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.RED + "This item cannot be bought/sold at this time.");
                 }
             }
         }

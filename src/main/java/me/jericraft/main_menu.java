@@ -15,15 +15,7 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import static me.jericraft.category_Brewing.brewing_1;
-import static me.jericraft.category_BuildingBlocks.buildingBlocks_1;
-import static me.jericraft.category_Combat.combat_1;
-import static me.jericraft.category_DecorationBlocks.decorationBlocks_1;
-import static me.jericraft.category_Food.food_1;
-import static me.jericraft.category_Miscellaneous.miscellaneous_1;
-import static me.jericraft.category_Redstone.redstone_1;
-import static me.jericraft.category_Tools.tools_1;
-import static me.jericraft.category_Transport.transport_1;
+import static me.jericraft.pageHandler.*;
 
 public class main_menu implements Listener {
 
@@ -58,11 +50,6 @@ public class main_menu implements Listener {
         return i;
     }
 
-    public static void openMainMenu(Player p) {
-        p.openInventory(menu);
-        return;
-    }
-
     @EventHandler
     public void onInventoryClick(InventoryClickEvent event) {
         String invTitle = event.getInventory().getTitle();
@@ -80,32 +67,23 @@ public class main_menu implements Listener {
         if (clickedItem == null || clickedItem.getType().equals(Material.AIR)) return;
 
         if (clickedItem.getType().equals(Material.BRICKS)) {
-            player.closeInventory();
-            player.openInventory(buildingBlocks_1);
+            openBuildingBlocksGUI(player, 1);
         } else if (clickedItem.getType().equals(Material.PEONY)) {
-            player.closeInventory();
-            player.openInventory(decorationBlocks_1);
+            openDecorationGUI(player, 1);
         } else if (clickedItem.getType().equals(Material.REDSTONE)) {
-            player.closeInventory();
-            player.openInventory(redstone_1);
+            openRedstoneGUI(player, 1);
         } else if (clickedItem.getType().equals(Material.POWERED_RAIL)) {
-            player.closeInventory();
-            player.openInventory(transport_1);
+            openTransportGUI(player, 1);
         } else if (clickedItem.getType().equals(Material.LAVA_BUCKET)) {
-            player.closeInventory();
-            player.openInventory(miscellaneous_1);
+            openMiscellaneousGUI(player, 1);
         } else if (clickedItem.getType().equals(Material.APPLE)) {
-            player.closeInventory();
-            player.openInventory(food_1);
+            openFoodGUI(player, 1);
         } else if (clickedItem.getType().equals(Material.IRON_AXE)) {
-            player.closeInventory();
-            player.openInventory(tools_1);
+            openToolsGUI(player, 1);
         } else if (clickedItem.getType().equals(Material.GOLDEN_SWORD)) {
-            player.closeInventory();
-            player.openInventory(combat_1);
+            openCombatGUI(player, 1);
         } else if (clickedItem.getType().equals(Material.POTION)) {
-            player.closeInventory();
-            player.openInventory(brewing_1);
+            openBrewingGUI(player, 1);
         }
     }
 }
