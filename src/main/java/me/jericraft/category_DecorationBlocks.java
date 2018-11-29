@@ -1,3 +1,8 @@
+
+/*
+ * Copyright (c) 2018.  JCShopGUI,  Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
+ */
+
 package me.jericraft;
 
 import org.bukkit.ChatColor;
@@ -137,6 +142,7 @@ public class category_DecorationBlocks implements Listener {
     }
 
     public static Inventory decorationBlocks_3 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Decoration Blocks (page 3)");
+
     public static void addItems_decorationBlocks_3() {
         decorationBlocks_3.addItem(createGuiItem(Material.ROSE_BUSH));
         decorationBlocks_3.addItem(createGuiItem(Material.PEONY));
@@ -198,6 +204,7 @@ public class category_DecorationBlocks implements Listener {
     }
 
     public static Inventory decorationBlocks_4 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Decoration Blocks (page 4)");
+
     public static void addItems_decorationBlocks_4() {
         decorationBlocks_4.addItem(createGuiItem(Material.LIGHT_GRAY_GLAZED_TERRACOTTA));
         decorationBlocks_4.addItem(createGuiItem(Material.CYAN_GLAZED_TERRACOTTA));
@@ -257,7 +264,9 @@ public class category_DecorationBlocks implements Listener {
         nextPage.setItemMeta(nextPageMeta);
         decorationBlocks_4.setItem(53, new ItemStack(nextPage));
     }
+
     public static Inventory decorationBlocks_5 = org.bukkit.Bukkit.createInventory(null, 36, ChatColor.RED + "Decoration Blocks (page 5)");
+
     public static void addItems_decorationBlocks_5() {
         decorationBlocks_5.addItem(createGuiItem(Material.ITEM_FRAME));
         decorationBlocks_5.addItem(createGuiItem(Material.FLOWER_POT));

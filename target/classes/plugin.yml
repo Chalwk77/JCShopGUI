@@ -17,6 +17,7 @@ permissions:
       jericraft.shop.use: true
       jericraft.shop.gamemode.bypass: true
       jericraft.shop.reload: true
+      jericraft.shop.version: true
   jericraft.shop.use:
     description: Allows you to open Shop GUI
     default: op
@@ -25,4 +26,7 @@ permissions:
     default: op
   jericraft.shop.reload:
     description: Reload the JCShopGUI plugin
+    default: op
+  jericraft.shop.version:
+    description: Display plugin version
     default: op

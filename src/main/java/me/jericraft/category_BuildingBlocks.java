@@ -1,3 +1,8 @@
+
+/*
+ * Copyright (c) 2018.  JCShopGUI,  Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
+ */
+
 package me.jericraft;
 
 import org.bukkit.ChatColor;
@@ -12,6 +17,7 @@ import static me.jericraft.main_menu.createGuiItem;
 
 public class category_BuildingBlocks implements Listener {
     public static Inventory buildingBlocks_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
+
     public static void addItems_BuildingBlocks_1() {
         buildingBlocks_1.addItem(createGuiItem(Material.STONE));
         buildingBlocks_1.addItem(createGuiItem(Material.GRANITE));

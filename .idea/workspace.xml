@@ -6,16 +6,27 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5e7385-042f-49a7-ac88-5fceb0060989" name="Default Changelist" comment="">
+    <list default="true" id="7c5e7385-042f-49a7-ac88-5fceb0060989" name="Default Changelist" comment="Fixed/added some stuff">
+      <change afterPath="$PROJECT_DIR$/.idea/MCPluginDebugger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/Jericho_Crosby.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JCShopGUI_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JCShopGUI_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Brewing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Brewing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Combat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_DecorationBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_DecorationBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Tools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/category_Transport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/jericraft/category_Brewing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/jericraft/category_Brewing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jericraft/pageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jericraft/pageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,34 +45,132 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Combat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
+                <element signature="e#0#3130#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#19756#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/pageHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#3693#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_DecorationBlocks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#20617#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Food.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#3051#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#4505#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#5608#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Tools.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#4355#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Transport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#2172#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#14264#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,24 +247,24 @@
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/ConfigManager.java" />
         <option value="$PROJECT_DIR$/src/main/resources/items.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/vm315.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_DecorationBlocks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Food.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Transport.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Combat.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Tools.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/StringUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/EnchantmentUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryGUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Brewing.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/pageHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
         <option value="$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Brewing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Combat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_DecorationBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Food.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Tools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Transport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/jericraft/pageHandler.java" />
       </list>
     </option>
   </component>
@@ -185,7 +294,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="206" />
+    <option name="x" value="442" />
     <option name="y" value="-8" />
     <option name="width" value="980" />
     <option name="height" value="554" />
@@ -198,8 +307,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,12 +360,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543454182508" />
-    <property name="last_opened_file_path" value="C:/Bitnami/multicraft-2.2.1-3/apps/multicraft/servers/jericraft/plugins/Vault1.6.11.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543468434327" />
+    <property name="last_opened_file_path" value="C:/Bitnami/multicraft-2.2.1-3/apps/multicraft/servers/jc_dev_server/plugins/JCShopGUI.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.12815534" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="project.structure.side.proportion" value="0.2038835" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -272,8 +381,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Spigot 1.13.2" type="JarApplication" factoryName="JAR Application">
-      <option name="JAR_PATH" value="C:/Bitnami/multicraft-2.2.1-3/apps/multicraft/servers/jericraft/spigot.jar" />
-      <option name="WORKING_DIRECTORY" value="C:\Bitnami\multicraft-2.2.1-3\apps\multicraft\servers\jericraft" />
+      <option name="JAR_PATH" value="C:/Bitnami/multicraft-2.2.1-3/apps/multicraft/servers/jc_dev_server/spigot.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\Bitnami\multicraft-2.2.1-3\apps\multicraft\servers\jc_dev_server\" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <module name="JCShopGUI" />
       <method v="2" />
@@ -395,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543363867879</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Fixed/added some stuff">
+      <created>1543454220446</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1543454220446</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -411,16 +527,17 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1609808" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49896264" visible="true" weight="0.19989339" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="MCDebugConsole" order="7" sideWeight="0.50103736" side_tool="true" weight="0.43976545" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32883817" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2780083" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2780083" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -429,6 +546,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50061125" side_tool="true" weight="0.32869378" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32883817" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32780084" />
+      <window_info anchor="bottom" id="LuaCheck" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -488,7 +606,8 @@
     <MESSAGE value="Bug fix." />
     <MESSAGE value="Added more items." />
     <MESSAGE value="Refactored some methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored some methods." />
+    <MESSAGE value="Fixed/added some stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed/added some stuff" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -548,91 +667,26 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/StringUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/EnchantmentUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/openPage.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_DecorationBlocks.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4138">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-908">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="212" column="1" selection-start-line="212" selection-start-column="1" selection-end-line="212" selection-end-column="1" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Food.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Tools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="81" column="54" lean-forward="true" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Combat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4524">
-          <caret line="33" column="66" lean-forward="true" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="71" column="41" lean-forward="true" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Transport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="66" />
-          <folding>
+            <element signature="e#0#7797#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -640,16 +694,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Brewing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        <state relative-caret-position="289">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#1287#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/pageHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_BuildingBlocks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="120" column="5" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
+            <element signature="e#0#23263#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Combat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#3130#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_DecorationBlocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#20617#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#3051#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Redstone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#5608#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Tools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#4355#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Transport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#2172#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/category_Miscellaneous.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#14264#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -657,36 +793,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/inventoryClickHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="213" selection-start-line="213" selection-end-line="213" selection-end-column="312" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
+            <element signature="e#0#19756#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/main_menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/entry_point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
+            <element signature="e#0#4505#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/jericraft/pageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#3693#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -701,8 +834,20 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.24827586" />
+                <option value="0.2038835" />
                 <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>Jericho Crosby</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2038835" />
               </list>
             </option>
           </splitter-proportions>
@@ -749,7 +894,8 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.12815534" />
+                <option value="0.2038835" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -773,7 +919,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.12815534" />
+                <option value="0.2038835" />
               </list>
             </option>
           </splitter-proportions>

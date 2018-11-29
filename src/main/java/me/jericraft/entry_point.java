@@ -1,13 +1,8 @@
 /*
- *  JeriCraft Shop GUI Plugin
- *  Copyright 2018 Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
- *
- *
- *
-    for (int i = 1; i <= 5; i++) {
-        int num = i;
-    }
+ * Copyright (c) 2018.  JCShopGUI,  Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
  */
+
+
 package me.jericraft;
 
 import net.milkbowl.vault.economy.Economy;
@@ -107,7 +102,6 @@ public class entry_point extends JavaPlugin {
                         } else if (args[0].equalsIgnoreCase("version")) {
                             if (sender.hasPermission("jericraft.shop.version")) {
                                 sender.sendMessage(PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", getConfig().getString("PluginVersion").replace("%current_version%", getDescription().getVersion()))));
-                                reloadConfig();
                             } else {
                                 sender.sendMessage(PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', getConfig().getString("NoPermission")));
                             }

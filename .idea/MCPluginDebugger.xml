@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MCPluginDebuggerConfig">
+    <option name="serverJarFile" value="C:\Bitnami\multicraft-2.2.1-3\apps\multicraft\servers\jericraft\spigot.jar" />
+    <option name="pluginJarFile" value="C:\Bitnami\multicraft-2.2.1-3\apps\multicraft\servers\jc_dev_server\plugins\JCShopGUI.jar" />
+    <option name="pluginName" value="EX" />
+    <option name="host" value="localhost" />
+    <option name="port" value="9000" />
+  </component>
+</project>

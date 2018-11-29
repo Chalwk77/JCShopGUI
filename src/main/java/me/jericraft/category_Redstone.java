@@ -1,3 +1,8 @@
+
+/*
+ * Copyright (c) 2018.  JCShopGUI,  Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
+ */
+
 package me.jericraft;
 
 import org.bukkit.ChatColor;
@@ -72,7 +77,9 @@ public class category_Redstone implements Listener {
         nextPage.setItemMeta(nextPageMeta);
         redstone_1.setItem(53, new ItemStack(nextPage));
     }
+
     public static Inventory redstone_2 = org.bukkit.Bukkit.createInventory(null, 18, ChatColor.RED + "Redstone (page 2)");
+
     public static void addItems_Redstone2() {
         redstone_2.addItem(createGuiItem(Material.OAK_DOOR));
         redstone_2.addItem(createGuiItem(Material.SPRUCE_DOOR));

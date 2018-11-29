@@ -1,3 +1,8 @@
+
+/*
+ * Copyright (c) 2018.  JCShopGUI,  Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
+ */
+
 package me.jericraft;
 
 import org.bukkit.ChatColor;

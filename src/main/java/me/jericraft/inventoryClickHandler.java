@@ -1,3 +1,8 @@
+
+/*
+ * Copyright (c) 2018.  JCShopGUI,  Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
+ */
+
 package me.jericraft;
 
 import net.milkbowl.vault.economy.EconomyResponse;
@@ -33,6 +38,7 @@ public class inventoryClickHandler implements Listener {
 
     private final entry_point plugin;
     private final FileConfiguration config;
+
     public inventoryClickHandler(entry_point plugin) {
         this.plugin = plugin;
         config = plugin.getConfig();

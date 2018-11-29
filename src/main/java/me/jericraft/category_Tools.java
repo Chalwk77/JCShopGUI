@@ -1,3 +1,8 @@
+
+/*
+ * Copyright (c) 2018.  JCShopGUI,  Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
+ */
+
 package me.jericraft;
 
 import org.bukkit.ChatColor;
@@ -21,6 +26,7 @@ public class category_Tools {
     }
 
     public static Inventory tools_1 = org.bukkit.Bukkit.createInventory(null, 45, ChatColor.RED + "Tools (page 1)");
+
     public static void addItems_Tools_1() {
         tools_1.addItem(createGuiItem(Material.IRON_SHOVEL));
         tools_1.addItem(createGuiItem(Material.IRON_PICKAXE));

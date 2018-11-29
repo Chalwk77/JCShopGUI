@@ -1,3 +1,8 @@
+
+/*
+ * Copyright (c) 2018.  JCShopGUI,  Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
+ */
+
 package me.jericraft;
 
 import org.bukkit.ChatColor;
@@ -12,6 +17,7 @@ import static me.jericraft.main_menu.createGuiItem;
 
 public class category_Transport {
     public static Inventory transport_1 = org.bukkit.Bukkit.createInventory(null, 27, ChatColor.RED + "Transport");
+
     public static void addItems_Transport_1() {
         transport_1.addItem(createGuiItem(Material.POWERED_RAIL));
         transport_1.addItem(createGuiItem(Material.DETECTOR_RAIL));

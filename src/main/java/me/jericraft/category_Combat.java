@@ -1,11 +1,14 @@
+
+/*
+ * Copyright (c) 2018.  JCShopGUI,  Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.
+ */
+
 package me.jericraft;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.EnchantmentStorageMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.Arrays;
@@ -14,6 +17,7 @@ import static me.jericraft.main_menu.createGuiItem;
 
 public class category_Combat {
     public static Inventory combat_1 = org.bukkit.Bukkit.createInventory(null, 45, ChatColor.RED + "Combat (page 1)");
+
     public static void addItems_Combat_1() {
         combat_1.addItem(createGuiItem(Material.TURTLE_HELMET));
         combat_1.addItem(createGuiItem(Material.BOW));
