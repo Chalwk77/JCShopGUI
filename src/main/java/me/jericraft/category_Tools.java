@@ -14,20 +14,21 @@ import org.bukkit.inventory.meta.EnchantmentStorageMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.Arrays;
+
 import static me.jericraft.main_menu.createGuiItem;
 
-public class category_Tools {
+class category_Tools {
 
-    public static ItemStack addBookEnchantment(ItemStack item, Enchantment enchantment, int level) {
+    private static ItemStack addBookEnchantment(ItemStack item, Enchantment enchantment, int level) {
         EnchantmentStorageMeta meta = (EnchantmentStorageMeta) item.getItemMeta();
         meta.addStoredEnchant(enchantment, level, true);
         item.setItemMeta(meta);
         return item;
     }
 
-    public static Inventory tools_1 = org.bukkit.Bukkit.createInventory(null, 45, ChatColor.RED + "Tools (page 1)");
+    static Inventory tools_1 = org.bukkit.Bukkit.createInventory(null, 45, ChatColor.RED + "Tools (page 1)");
 
-    public static void addItems_Tools_1() {
+    static void addItems_Tools_1() {
         tools_1.addItem(createGuiItem(Material.IRON_SHOVEL));
         tools_1.addItem(createGuiItem(Material.IRON_PICKAXE));
         tools_1.addItem(createGuiItem(Material.IRON_AXE));
@@ -72,7 +73,7 @@ public class category_Tools {
         addBookEnchantment(book5, Enchantment.LUCK, 3);
         tools_1.setItem(27, new ItemStack(book5));
 
-        ItemStack book6= new ItemStack(Material.ENCHANTED_BOOK);
+        ItemStack book6 = new ItemStack(Material.ENCHANTED_BOOK);
         addBookEnchantment(book6, Enchantment.LURE, 3);
         tools_1.setItem(28, new ItemStack(book6));
 

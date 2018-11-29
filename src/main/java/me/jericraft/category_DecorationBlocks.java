@@ -16,10 +16,10 @@ import java.util.Arrays;
 
 import static me.jericraft.main_menu.createGuiItem;
 
-public class category_DecorationBlocks implements Listener {
-    public static Inventory decorationBlocks_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Decoration Blocks (page 1)");
+class category_DecorationBlocks implements Listener {
+    static Inventory decorationBlocks_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Decoration Blocks (page 1)");
 
-    public static void addItems_decorationBlocks_1() {
+    static void addItems_decorationBlocks_1() {
         decorationBlocks_1.addItem(createGuiItem(Material.OAK_SAPLING));
         decorationBlocks_1.addItem(createGuiItem(Material.SPRUCE_SAPLING));
         decorationBlocks_1.addItem(createGuiItem(Material.BIRCH_SAPLING));
@@ -79,9 +79,9 @@ public class category_DecorationBlocks implements Listener {
         decorationBlocks_1.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory decorationBlocks_2 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Decoration Blocks (page 2)");
+    static Inventory decorationBlocks_2 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Decoration Blocks (page 2)");
 
-    public static void addItems_decorationBlocks_2() {
+    static void addItems_decorationBlocks_2() {
         decorationBlocks_2.addItem(createGuiItem(Material.JUNGLE_FENCE));
         decorationBlocks_2.addItem(createGuiItem(Material.ACACIA_FENCE));
         decorationBlocks_2.addItem(createGuiItem(Material.DARK_OAK_FENCE));
@@ -141,9 +141,9 @@ public class category_DecorationBlocks implements Listener {
         decorationBlocks_2.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory decorationBlocks_3 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Decoration Blocks (page 3)");
+    static Inventory decorationBlocks_3 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Decoration Blocks (page 3)");
 
-    public static void addItems_decorationBlocks_3() {
+    static void addItems_decorationBlocks_3() {
         decorationBlocks_3.addItem(createGuiItem(Material.ROSE_BUSH));
         decorationBlocks_3.addItem(createGuiItem(Material.PEONY));
         decorationBlocks_3.addItem(createGuiItem(Material.TALL_GRASS));
@@ -203,9 +203,9 @@ public class category_DecorationBlocks implements Listener {
         decorationBlocks_3.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory decorationBlocks_4 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Decoration Blocks (page 4)");
+    static Inventory decorationBlocks_4 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Decoration Blocks (page 4)");
 
-    public static void addItems_decorationBlocks_4() {
+    static void addItems_decorationBlocks_4() {
         decorationBlocks_4.addItem(createGuiItem(Material.LIGHT_GRAY_GLAZED_TERRACOTTA));
         decorationBlocks_4.addItem(createGuiItem(Material.CYAN_GLAZED_TERRACOTTA));
         decorationBlocks_4.addItem(createGuiItem(Material.PURPLE_GLAZED_TERRACOTTA));
@@ -265,9 +265,9 @@ public class category_DecorationBlocks implements Listener {
         decorationBlocks_4.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory decorationBlocks_5 = org.bukkit.Bukkit.createInventory(null, 36, ChatColor.RED + "Decoration Blocks (page 5)");
+    static Inventory decorationBlocks_5 = org.bukkit.Bukkit.createInventory(null, 36, ChatColor.RED + "Decoration Blocks (page 5)");
 
-    public static void addItems_decorationBlocks_5() {
+    static void addItems_decorationBlocks_5() {
         decorationBlocks_5.addItem(createGuiItem(Material.ITEM_FRAME));
         decorationBlocks_5.addItem(createGuiItem(Material.FLOWER_POT));
         decorationBlocks_5.addItem(createGuiItem(Material.SKELETON_SKULL));

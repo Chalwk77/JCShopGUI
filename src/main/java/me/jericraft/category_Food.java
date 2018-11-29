@@ -15,10 +15,10 @@ import java.util.Arrays;
 
 import static me.jericraft.main_menu.createGuiItem;
 
-public class category_Food {
-    public static Inventory food_1 = org.bukkit.Bukkit.createInventory(null, 45, ChatColor.RED + "Food");
+class category_Food {
+    static Inventory food_1 = org.bukkit.Bukkit.createInventory(null, 45, ChatColor.RED + "Food");
 
-    public static void addItems_Food_1() {
+    static void addItems_Food_1() {
         food_1.addItem(createGuiItem(Material.APPLE));
         food_1.addItem(createGuiItem(Material.MUSHROOM_STEM));
         food_1.addItem(createGuiItem(Material.BREAD));

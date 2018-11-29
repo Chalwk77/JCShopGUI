@@ -15,10 +15,10 @@ import java.util.Arrays;
 
 import static me.jericraft.main_menu.createGuiItem;
 
-public class category_Miscellaneous {
-    public static Inventory miscellaneous_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Miscellaneous (page 1)");
+class category_Miscellaneous {
+    static Inventory miscellaneous_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Miscellaneous (page 1)");
 
-    public static void addItems_Miscellaneous_1() {
+    static void addItems_Miscellaneous_1() {
         miscellaneous_1.addItem(createGuiItem(Material.BEACON));
         miscellaneous_1.addItem(createGuiItem(Material.TURTLE_EGG));
         miscellaneous_1.addItem(createGuiItem(Material.CONDUIT));
@@ -78,9 +78,9 @@ public class category_Miscellaneous {
         miscellaneous_1.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory miscellaneous_2 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Miscellaneous (page 2)");
+    static Inventory miscellaneous_2 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Miscellaneous (page 2)");
 
-    public static void addItems_Miscellaneous_2() {
+    static void addItems_Miscellaneous_2() {
         miscellaneous_2.addItem(createGuiItem(Material.LIME_DYE));
         miscellaneous_2.addItem(createGuiItem(Material.DANDELION_YELLOW));
         miscellaneous_2.addItem(createGuiItem(Material.LIGHT_BLUE_DYE));
@@ -140,9 +140,9 @@ public class category_Miscellaneous {
         miscellaneous_2.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory miscellaneous_3 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Miscellaneous (page 3)");
+    static Inventory miscellaneous_3 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Miscellaneous (page 3)");
 
-    public static void addItems_Miscellaneous_3() {
+    static void addItems_Miscellaneous_3() {
         miscellaneous_3.addItem(createGuiItem(Material.SHEEP_SPAWN_EGG));
         miscellaneous_3.addItem(createGuiItem(Material.SHULKER_SPAWN_EGG));
         miscellaneous_3.addItem(createGuiItem(Material.SILVERFISH_SPAWN_EGG));
@@ -202,9 +202,9 @@ public class category_Miscellaneous {
         miscellaneous_3.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory miscellaneous_4 = org.bukkit.Bukkit.createInventory(null, 27, ChatColor.RED + "Miscellaneous (page 4)");
+    static Inventory miscellaneous_4 = org.bukkit.Bukkit.createInventory(null, 27, ChatColor.RED + "Miscellaneous (page 4)");
 
-    public static void addItems_Miscellaneous_4() {
+    static void addItems_Miscellaneous_4() {
         miscellaneous_4.addItem(createGuiItem(Material.MUSIC_DISC_FAR));
         miscellaneous_4.addItem(createGuiItem(Material.MUSIC_DISC_MALL));
         miscellaneous_4.addItem(createGuiItem(Material.MUSIC_DISC_MELLOHI));

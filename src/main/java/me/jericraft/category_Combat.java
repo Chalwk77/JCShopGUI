@@ -15,10 +15,10 @@ import java.util.Arrays;
 
 import static me.jericraft.main_menu.createGuiItem;
 
-public class category_Combat {
-    public static Inventory combat_1 = org.bukkit.Bukkit.createInventory(null, 45, ChatColor.RED + "Combat (page 1)");
+class category_Combat {
+    static Inventory combat_1 = org.bukkit.Bukkit.createInventory(null, 45, ChatColor.RED + "Combat (page 1)");
 
-    public static void addItems_Combat_1() {
+    static void addItems_Combat_1() {
         combat_1.addItem(createGuiItem(Material.TURTLE_HELMET));
         combat_1.addItem(createGuiItem(Material.BOW));
         combat_1.addItem(createGuiItem(Material.ARROW));

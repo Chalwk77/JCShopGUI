@@ -11,14 +11,15 @@ import org.bukkit.event.Listener;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+
 import java.util.Arrays;
 
 import static me.jericraft.main_menu.createGuiItem;
 
-public class category_Redstone implements Listener {
-    public static Inventory redstone_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Redstone (page 1)");
+class category_Redstone implements Listener {
+    static Inventory redstone_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Redstone (page 1)");
 
-    public static void addItems_Redstone1() {
+    static void addItems_Redstone1() {
         redstone_1.addItem(createGuiItem(Material.DISPENSER));
         redstone_1.addItem(createGuiItem(Material.NOTE_BLOCK));
         redstone_1.addItem(createGuiItem(Material.STICKY_PISTON));
@@ -78,9 +79,9 @@ public class category_Redstone implements Listener {
         redstone_1.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory redstone_2 = org.bukkit.Bukkit.createInventory(null, 18, ChatColor.RED + "Redstone (page 2)");
+    static Inventory redstone_2 = org.bukkit.Bukkit.createInventory(null, 18, ChatColor.RED + "Redstone (page 2)");
 
-    public static void addItems_Redstone2() {
+    static void addItems_Redstone2() {
         redstone_2.addItem(createGuiItem(Material.OAK_DOOR));
         redstone_2.addItem(createGuiItem(Material.SPRUCE_DOOR));
         redstone_2.addItem(createGuiItem(Material.BIRCH_DOOR));

@@ -15,10 +15,10 @@ import java.util.Arrays;
 
 import static me.jericraft.main_menu.createGuiItem;
 
-public class category_BuildingBlocks implements Listener {
-    public static Inventory buildingBlocks_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
+class category_BuildingBlocks implements Listener {
+    static Inventory buildingBlocks_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 1)");
 
-    public static void addItems_BuildingBlocks_1() {
+    static void addItems_BuildingBlocks_1() {
         buildingBlocks_1.addItem(createGuiItem(Material.STONE));
         buildingBlocks_1.addItem(createGuiItem(Material.GRANITE));
         buildingBlocks_1.addItem(createGuiItem(Material.POLISHED_GRANITE));
@@ -78,9 +78,9 @@ public class category_BuildingBlocks implements Listener {
         buildingBlocks_1.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory buildingBlocks_2 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 2)");
+    static Inventory buildingBlocks_2 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 2)");
 
-    public static void addItems_BuildingBlocks_2() {
+    static void addItems_BuildingBlocks_2() {
         buildingBlocks_2.addItem(createGuiItem(Material.BIRCH_WOOD));
         buildingBlocks_2.addItem(createGuiItem(Material.JUNGLE_WOOD));
         buildingBlocks_2.addItem(createGuiItem(Material.ACACIA_WOOD));
@@ -141,9 +141,9 @@ public class category_BuildingBlocks implements Listener {
         buildingBlocks_2.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory buildingBlocks_3 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 3)");
+    static Inventory buildingBlocks_3 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 3)");
 
-    public static void addItems_BuildingBlocks_3() {
+    static void addItems_BuildingBlocks_3() {
         buildingBlocks_3.addItem(createGuiItem(Material.PRISMARINE_SLAB));
         buildingBlocks_3.addItem(createGuiItem(Material.PRISMARINE_BRICK_SLAB));
         buildingBlocks_3.addItem(createGuiItem(Material.DARK_PRISMARINE_SLAB));
@@ -204,9 +204,9 @@ public class category_BuildingBlocks implements Listener {
         buildingBlocks_3.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory buildingBlocks_4 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 4)");
+    static Inventory buildingBlocks_4 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 4)");
 
-    public static void addItems_BuildingBlocks_4() {
+    static void addItems_BuildingBlocks_4() {
         buildingBlocks_4.addItem(createGuiItem(Material.CHISELED_QUARTZ_BLOCK));
         buildingBlocks_4.addItem(createGuiItem(Material.QUARTZ_BLOCK));
         buildingBlocks_4.addItem(createGuiItem(Material.QUARTZ_PILLAR));
@@ -267,9 +267,9 @@ public class category_BuildingBlocks implements Listener {
         buildingBlocks_4.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory buildingBlocks_5 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 5)");
+    static Inventory buildingBlocks_5 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Building Blocks (page 5)");
 
-    public static void addItems_BuildingBlocks_5() {
+    static void addItems_BuildingBlocks_5() {
         buildingBlocks_5.addItem(createGuiItem(Material.PRISMARINE_BRICK_STAIRS));
         buildingBlocks_5.addItem(createGuiItem(Material.DARK_PRISMARINE_STAIRS));
         buildingBlocks_5.addItem(createGuiItem(Material.SEA_LANTERN));
@@ -330,9 +330,9 @@ public class category_BuildingBlocks implements Listener {
         buildingBlocks_5.setItem(53, new ItemStack(nextPage));
     }
 
-    public static Inventory buildingBlocks_6 = org.bukkit.Bukkit.createInventory(null, 27, ChatColor.RED + "Building Blocks (page 6)");
+    static Inventory buildingBlocks_6 = org.bukkit.Bukkit.createInventory(null, 27, ChatColor.RED + "Building Blocks (page 6)");
 
-    public static void addItems_BuildingBlocks_6() {
+    static void addItems_BuildingBlocks_6() {
         buildingBlocks_6.addItem(createGuiItem(Material.DEAD_BUBBLE_CORAL_BLOCK));
         buildingBlocks_6.addItem(createGuiItem(Material.DEAD_FIRE_CORAL_BLOCK));
         buildingBlocks_6.addItem(createGuiItem(Material.DEAD_HORN_CORAL_BLOCK));

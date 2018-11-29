@@ -15,10 +15,10 @@ import org.bukkit.potion.PotionEffectType;
 
 import static me.jericraft.main_menu.createGuiItem;
 
-public class category_Brewing {
-    public static Inventory brewing_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Brewing (page 1)");
+class category_Brewing {
+    static Inventory brewing_1 = org.bukkit.Bukkit.createInventory(null, 54, ChatColor.RED + "Brewing (page 1)");
 
-    public static void addItems_Brewing_1() {
+    static void addItems_Brewing_1() {
         brewing_1.addItem(createGuiItem(Material.GHAST_TEAR));
 
         ItemStack health_regen = new ItemStack(Material.POTION);

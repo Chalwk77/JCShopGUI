@@ -18,16 +18,15 @@ import static me.jericraft.category_BuildingBlocks.*;
 import static me.jericraft.category_DecorationBlocks.*;
 
 
-public class pageHandler {
-    public static void openMainMenu(Player p, Boolean bool) {
-        if (bool == true) {
+class pageHandler {
+    static void openMainMenu(Player p, Boolean bool) {
+        if (bool) {
             p.closeInventory();
         }
         p.openInventory(me.jericraft.main_menu.menu);
-        return;
     }
 
-    public static void openBuildingBlocksGUI(Player p, int page_num) {
+    static void openBuildingBlocksGUI(Player p, int page_num) {
         p.closeInventory();
         if (page_num == 1) {
             p.openInventory(buildingBlocks_1);
@@ -42,10 +41,9 @@ public class pageHandler {
         } else if (page_num == 6) {
             p.openInventory(buildingBlocks_6);
         }
-        return;
     }
 
-    public static void openDecorationGUI(Player p, int page_num) {
+    static void openDecorationGUI(Player p, int page_num) {
         p.closeInventory();
         if (page_num == 1) {
             p.openInventory(decorationBlocks_1);
@@ -58,28 +56,25 @@ public class pageHandler {
         } else if (page_num == 5) {
             p.openInventory(decorationBlocks_5);
         }
-        return;
     }
 
-    public static void openRedstoneGUI(Player p, int page_num) {
+    static void openRedstoneGUI(Player p, int page_num) {
         p.closeInventory();
         if (page_num == 1) {
             p.openInventory(redstone_1);
         } else if (page_num == 2) {
             p.openInventory(redstone_2);
         }
-        return;
     }
 
-    public static void openTransportGUI(Player p, int page_num) {
+    static void openTransportGUI(Player p, int page_num) {
         p.closeInventory();
         if (page_num == 1) {
             p.openInventory(transport_1);
         }
-        return;
     }
 
-    public static void openMiscellaneousGUI(Player p, int page_num) {
+    static void openMiscellaneousGUI(Player p, int page_num) {
         p.closeInventory();
         if (page_num == 1) {
             p.openInventory(miscellaneous_1);
@@ -90,38 +85,34 @@ public class pageHandler {
         } else if (page_num == 4) {
             p.openInventory(miscellaneous_4);
         }
-        return;
     }
 
-    public static void openFoodGUI(Player p, int page_num) {
+    // The 'page_num' parameter in these methods will always be the same constant, however, I am checking for the page number anyway because I intend to add additional 'pages' in a later update.
+    static void openFoodGUI(Player p, int page_num) {
         p.closeInventory();
         if (page_num == 1) {
             p.openInventory(food_1);
         }
-        return;
     }
 
-    public static void openToolsGUI(Player p, int page_num) {
+    static void openToolsGUI(Player p, int page_num) {
         p.closeInventory();
         if (page_num == 1) {
             p.openInventory(tools_1);
         }
-        return;
     }
 
-    public static void openCombatGUI(Player p, int page_num) {
+    static void openCombatGUI(Player p, int page_num) {
         p.closeInventory();
         if (page_num == 1) {
             p.openInventory(combat_1);
         }
-        return;
     }
 
-    public static void openBrewingGUI(Player p, int page_num) {
+    static void openBrewingGUI(Player p, int page_num) {
         p.closeInventory();
         if (page_num == 1) {
             p.openInventory(brewing_1);
         }
-        return;
     }
 }

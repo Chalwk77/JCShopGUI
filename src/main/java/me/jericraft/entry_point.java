@@ -19,7 +19,7 @@ import static me.jericraft.pageHandler.*;
 public class entry_point extends JavaPlugin {
     private static entry_point instance;
 
-    public static entry_point getInstance() {
+    static entry_point getInstance() {
         return instance;
     }
 
@@ -34,8 +34,8 @@ public class entry_point extends JavaPlugin {
     private category_Combat loadCombat;
     private category_Brewing loadBrewing;
 
-    public final String PLUGIN_PREFIX = ChatColor.translateAlternateColorCodes('&', getConfig().getString("PluginPrefix") + ChatColor.RESET);
-    public static Economy econ = null;
+    final String PLUGIN_PREFIX = ChatColor.translateAlternateColorCodes('&', getConfig().getString("PluginPrefix") + ChatColor.RESET);
+    static Economy econ = null;
 
     @Override
     public void onEnable() {
@@ -91,7 +91,7 @@ public class entry_point extends JavaPlugin {
                         } else if (player.getGameMode().equals(GameMode.SURVIVAL)) {
                             openMainMenu(player, false);
                         }
-                    } else if (args.length >= 1) {
+                    } else if (args.length == 1) {
                         if (args[0].equalsIgnoreCase("reload")) {
                             if (sender.hasPermission("jericraft.shop.reload")) {
                                 sender.sendMessage(PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', getConfig().getString("ReloadPlugin")));
@@ -120,12 +120,12 @@ public class entry_point extends JavaPlugin {
         return false;
     }
 
-    public void loadConfig() {
+    private void loadConfig() {
         getConfig().options().copyDefaults(true);
         saveConfig();
     }
 
-    public void preload_categories() {
+    private void preload_categories() {
         loadMenuIcons = new main_menu();
         main_menu.initMenuIcons();
 

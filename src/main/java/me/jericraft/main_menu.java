@@ -26,7 +26,7 @@ public class main_menu implements Listener {
 
     public static Inventory menu = org.bukkit.Bukkit.createInventory(null, 9, ChatColor.RED + "The Shop Menu");
 
-    public static void initMenuIcons() {
+    static void initMenuIcons() {
         menu.addItem(menuIcons(ChatColor.BLUE + "Building Blocks", new ArrayList<String>(Arrays.asList(ChatColor.LIGHT_PURPLE + "5 pages")), Material.BRICKS));
         menu.addItem(menuIcons("Decoration Items", new ArrayList<String>(Arrays.asList(ChatColor.LIGHT_PURPLE + "5 pages")), Material.PEONY));
         menu.addItem(menuIcons("Redstone", new ArrayList<String>(Arrays.asList(ChatColor.LIGHT_PURPLE + "2 pages")), Material.REDSTONE));
@@ -38,7 +38,7 @@ public class main_menu implements Listener {
         menu.addItem(menuIcons("Brewing", new ArrayList<String>(Arrays.asList(ChatColor.LIGHT_PURPLE + "error")), Material.POTION));
     }
 
-    public static ItemStack menuIcons(String name, ArrayList<String> desc, Material mat) {
+    private static ItemStack menuIcons(String name, ArrayList<String> desc, Material mat) {
         ItemStack i = new ItemStack(mat, 1);
         ItemMeta iMeta = i.getItemMeta();
         iMeta.setDisplayName(name);
