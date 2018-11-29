@@ -4,7 +4,6 @@
  *
  *
  *
- *  System.out.println(player.getName() + " - go to Building Blocks Inventory");
     for (int i = 1; i <= 5; i++) {
         int num = i;
     }
@@ -24,7 +23,10 @@ import static me.jericraft.pageHandler.*;
 
 public class entry_point extends JavaPlugin {
     private static entry_point instance;
-    public static entry_point getInstance() { return instance; }
+
+    public static entry_point getInstance() {
+        return instance;
+    }
 
     private main_menu loadMenuIcons;
     private category_BuildingBlocks loadBuildingBlocks;
@@ -50,16 +52,16 @@ public class entry_point extends JavaPlugin {
             getLogger().severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
             getServer().getPluginManager().disablePlugin(this);
             return;
+        } else {
+            getLogger().info("Hooked into Vault");
         }
         loadConfig();
-        preloadMenu();
         preload_categories();
-        System.out.println("==================================================================================");
-        System.out.println("JCShopGUI enabled.");
-        System.out.println("Author: Chalwk (Jericho Crosby)");
-        System.out.println("Copyright 2018 Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.");
-        System.out.println("Many thanks for @NoCash for helping with item buy/sell prices and item quantities.");
-        System.out.println("==================================================================================");
+        getLogger().info("====================================================================");
+        getLogger().info("Plugin enabled! (Version " + getDescription().getVersion() + ")");
+        getLogger().info("Author: Chalwk (Jericho Crosby)");
+        getLogger().info("Copyright 2018 Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.");
+        getLogger().info("====================================================================");
     }
 
     private boolean setupEconomy() {
@@ -96,15 +98,28 @@ public class entry_point extends JavaPlugin {
                         }
                     } else if (args.length >= 1) {
                         if (args[0].equalsIgnoreCase("reload")) {
-                            sender.sendMessage(PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', getConfig().getString("ReloadPlugin")));
-                            reloadConfig();
+                            if (sender.hasPermission("jericraft.shop.reload")) {
+                                sender.sendMessage(PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', getConfig().getString("ReloadPlugin")));
+                                reloadConfig();
+                            } else {
+                                sender.sendMessage(PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', getConfig().getString("NoPermission")));
+                            }
+                        } else if (args[0].equalsIgnoreCase("version")) {
+                            if (sender.hasPermission("jericraft.shop.version")) {
+                                sender.sendMessage(PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", getConfig().getString("PluginVersion").replace("%current_version%", getDescription().getVersion()))));
+                                reloadConfig();
+                            } else {
+                                sender.sendMessage(PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', getConfig().getString("NoPermission")));
+                            }
+                        } else {
+                            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cInvalid Syntax! Please use: &b/shop reload &cor &b/shop version"));
                         }
                     }
                 } else {
                     sender.sendMessage(PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', getConfig().getString("NoPermission")));
                 }
             } else {
-                sender.sendMessage(PLUGIN_PREFIX + " This command can only be executed by a player!");
+                getLogger().severe("Plugin commands can only be executed by a player (in game)");
             }
             return true;
         }
@@ -116,12 +131,10 @@ public class entry_point extends JavaPlugin {
         saveConfig();
     }
 
-    public void preloadMenu() {
+    public void preload_categories() {
         loadMenuIcons = new main_menu();
         main_menu.initMenuIcons();
-    }
 
-    public void preload_categories() {
         loadBuildingBlocks = new category_BuildingBlocks();
         category_BuildingBlocks.addItems_BuildingBlocks_1();
         category_BuildingBlocks.addItems_BuildingBlocks_2();

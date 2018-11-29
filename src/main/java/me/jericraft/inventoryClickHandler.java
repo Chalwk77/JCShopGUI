@@ -197,13 +197,9 @@ public class inventoryClickHandler implements Listener {
 
                 String quantity = plugin.getInstance().getConfig().getString("items." + item_name + ".quantity");
                 double item_quantity = Double.parseDouble(quantity);
-                int intCount_placeholder = 0;
+                int i_quantity = (int) item_quantity;
 
-//                EnchantmentStorageMeta meta = (EnchantmentStorageMeta) clickedItem.getItemMeta();
-//                Map<Enchantment, Integer> item_enchants = meta.getStoredEnchants();
-//                System.out.println("enchants are: " + item_enchants);
-
-                if (buy_price != intCount_placeholder) {
+                if (buy_price != 0) {
                     // ================= BUYING ================= //
                     if (event.isRightClick() && !event.isShiftClick()) {
                         EconomyResponse take_money = econ.withdrawPlayer(player, buy_price);
@@ -215,10 +211,10 @@ public class inventoryClickHandler implements Listener {
                                 player.getWorld().dropItem(loc, clickedItem);
                                 player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("inventoryFull")));
                             } else {
-                                player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("buyRClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + buy_price))));
+                                player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("buyRClick").replace("%item_quantity%", "" + i_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + buy_price))));
                             }
                         } else {
-                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughMoney").replace("%item_price%", "" + buy_price).replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name))));
+                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("notEnoughMoney").replace("%item_price%", "" + buy_price).replace("%item_quantity%", "" + i_quantity).replace("%item_name%", "" + item_name))));
                         }
                     } else if (event.isRightClick() && event.isShiftClick()) {
                         EconomyResponse take_money_mul = econ.withdrawPlayer(player, (buy_price / item_quantity) * 64);
@@ -250,7 +246,7 @@ public class inventoryClickHandler implements Listener {
                                             DecimalFormat f = new DecimalFormat("##0.###");
                                             player.getInventory().removeItem(new ItemStack(mat, Integer.parseInt(quantity)));
                                             EconomyResponse give_money_mul = econ.depositPlayer(player, (sell_price / item_quantity));
-                                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + item_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + f.format(d)))));
+                                            player.sendMessage(plugin.PLUGIN_PREFIX + " " + ChatColor.translateAlternateColorCodes('&', String.format("%s", plugin.getConfig().getString("sellLClick").replace("%item_quantity%", "" + i_quantity).replace("%item_name%", "" + item_name).replace("%item_price%", "" + f.format(d)))));
                                             break;
                                         }
                                     }

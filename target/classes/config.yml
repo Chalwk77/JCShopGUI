@@ -2,6 +2,7 @@
 #                 JeriCraft Shop GUI config file.                         #
 #  Copyright 2018 Chalwk (Jericho Crosby), jericho.crosby227@gmail.com.   #
 PluginPrefix: '&7[&cJeriCraft&7]'
+PluginVersion: "&cYou are running version &b%current_version%"
 NoPermission: '&cAccess Denied.'
 ReloadPlugin: '&aPlugin Reloaded'
 GamemodeNotice: '&cYou must be in survival mode!'
@@ -12,6 +13,7 @@ sellLShiftClick: '&bYou sold &e%item_quantity% %item_name% &bfor &e$%item_price%
 notEnoughMoney: '&cNot Enough Money! You need $%item_price% for %item_quantity% %item_name%.'
 notEnoughItems: '&cYou don''t have enough items to sell!'
 inventoryFull: '&cInventory full. Your item(s) have dropped on the ground!'
+
 items:
   BEDROCK:
     buy: '500000'
@@ -586,6 +588,10 @@ items:
     sell: '2'
     quantity: '1'
   DARK_OAK_PRESSURE_PLATE:
+    buy: '2.5'
+    sell: '2'
+    quantity: '1'
+  ACACIA_PRESSURE_PLATE:
     buy: '2.5'
     sell: '2'
     quantity: '1'
@@ -2947,3 +2953,7 @@ items:
     buy: '0'
     sell: '0'
     quantity: '0'
+  GHAST_TEAR:
+    buy: '50'
+    sell: '25'
+    quantity: '1'
